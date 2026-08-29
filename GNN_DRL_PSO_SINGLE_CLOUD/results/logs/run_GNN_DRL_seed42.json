@@ -1,0 +1,3476 @@
+{
+  "summary": {
+    "config": "GNN_DRL",
+    "seed": 42,
+    "n_train_services": 2006,
+    "n_test_services": 501,
+    "num_train_episodes": 50,
+    "num_test_episodes": 25,
+    "mean_train_fitness_last_10": 0.4309955290680648,
+    "mean_test_fitness": 0.40980021505925024,
+    "std_test_fitness": 0.07437553112420008,
+    "mean_test_initial_fitness": 0.40980021505925024,
+    "mean_drl_inference_seconds_per_episode": 0.022350497245788574,
+    "mean_pso_seconds_per_episode": 0.0,
+    "train_seconds": 10.619266510009766,
+    "test_seconds": 0.09554576873779297,
+    "test_success_rate": 1.0,
+    "uses_gnn": true,
+    "uses_pso": false,
+    "total_seconds": 20.920573711395264
+  },
+  "train_metrics": [
+    {
+      "episode": 0,
+      "seconds": 0.008924484252929688,
+      "initial_fitness": 0.5350660394110525,
+      "final_fitness": 0.5350660394110525,
+      "task_sequence": [
+        "Platinum",
+        "Platinum",
+        "Platinum",
+        "Platinum",
+        "Silver"
+      ],
+      "final_composition": [
+        359,
+        1125,
+        1684,
+        671,
+        1284
+      ],
+      "valid_steps": 5,
+      "success": true,
+      "normalized_qos": {
+        "response_time": 0.7672568533740387,
+        "availability": 0.570845742795699,
+        "throughput": 0.03023255813953488,
+        "successability": 0.7061977967391304,
+        "reliability": 0.0,
+        "compliance": 0.9014925373134329,
+        "best_practices": 0.6533333333333334,
+        "latency": 0.976719917547024,
+        "documentation": 0.3645833333333333
+      },
+      "raw_qos": {
+        "response_time": 1189.7,
+        "availability": 60.088654080000005,
+        "throughput": 1.4,
+        "successability": 72.9701973,
+        "reliability": 17.7807414,
+        "compliance": 93.4,
+        "best_practices": 79.4,
+        "latency": 90.6,
+        "documentation": 36.0
+      },
+      "pso_seconds": 0.0,
+      "pso_history": []
+    },
+    {
+      "episode": 1,
+      "seconds": 0.006703615188598633,
+      "initial_fitness": 0.535606041816861,
+      "final_fitness": 0.535606041816861,
+      "task_sequence": [
+        "Silver",
+        "Platinum",
+        "Silver",
+        "Platinum",
+        "Silver"
+      ],
+      "final_composition": [
+        1836,
+        1369,
+        165,
+        1103,
+        1017
+      ],
+      "valid_steps": 5,
+      "success": true,
+      "normalized_qos": {
+        "response_time": 0.7676061599097053,
+        "availability": 0.5977314511827957,
+        "throughput": 0.027906976744186046,
+        "successability": 0.6876740358695651,
+        "reliability": 0.0,
+        "compliance": 0.835820895522388,
+        "best_practices": 0.648888888888889,
+        "latency": 0.9223009533625354,
+        "documentation": 0.4666666666666666
+      },
+      "raw_qos": {
+        "response_time": 1187.9699999999998,
+        "availability": 62.589024959999996,
+        "throughput": 1.3,
+        "successability": 71.26601129999999,
+        "reliability": 19.026821469999998,
+        "compliance": 89.0,
+        "best_practices": 79.2,
+        "latency": 301.8,
+        "documentation": 45.8
+      },
+      "pso_seconds": 0.0,
+      "pso_history": []
+    },
+    {
+      "episode": 2,
+      "seconds": 0.012032508850097656,
+      "initial_fitness": 0.2581493770182518,
+      "final_fitness": 0.2581493770182518,
+      "task_sequence": [
+        "Platinum",
+        "Gold",
+        "Bronze",
+        "Silver",
+        "Bronze"
+      ],
+      "final_composition": [
+        1151,
+        647,
+        971,
+        817,
+        1202
+      ],
+      "valid_steps": 5,
+      "success": true,
+      "normalized_qos": {
+        "response_time": 0.4044343758013354,
+        "availability": 0.15712850924731184,
+        "throughput": 0.013953488372093023,
+        "successability": 0.16856678260869562,
+        "reliability": 0.0,
+        "compliance": 0.8029850746268656,
+        "best_practices": 0.7511111111111111,
+        "latency": 0.43916516361762437,
+        "documentation": 0.12083333333333333
+      },
+      "raw_qos": {
+        "response_time": 2986.6400000000003,
+        "availability": 21.61295136,
+        "throughput": 0.7,
+        "successability": 23.508143999999998,
+        "reliability": 17.462973129999998,
+        "compliance": 86.8,
+        "best_practices": 83.8,
+        "latency": 2176.85,
+        "documentation": 12.6
+      },
+      "pso_seconds": 0.0,
+      "pso_history": []
+    },
+    {
+      "episode": 3,
+      "seconds": 0.013301372528076172,
+      "initial_fitness": 0.38185111245795184,
+      "final_fitness": 0.38185111245795184,
+      "task_sequence": [
+        "Bronze",
+        "Platinum",
+        "Platinum",
+        "Platinum",
+        "Silver"
+      ],
+      "final_composition": [
+        1024,
+        1020,
+        909,
+        1563,
+        1355
+      ],
+      "valid_steps": 5,
+      "success": true,
+      "normalized_qos": {
+        "response_time": 0.7094234019225993,
+        "availability": 0.008096811182795705,
+        "throughput": 0.046511627906976744,
+        "successability": 0.010753739130434791,
+        "reliability": 0.0,
+        "compliance": 0.835820895522388,
+        "best_practices": 0.6533333333333334,
+        "latency": 0.9366477711929915,
+        "documentation": 0.5354166666666667
+      },
+      "raw_qos": {
+        "response_time": 1476.13,
+        "availability": 7.7530034400000005,
+        "throughput": 2.1,
+        "successability": 8.989344000000001,
+        "reliability": 9.243043919999998,
+        "compliance": 89.0,
+        "best_practices": 79.4,
+        "latency": 246.12,
+        "documentation": 52.4
+      },
+      "pso_seconds": 0.0,
+      "pso_history": []
+    },
+    {
+      "episode": 4,
+      "seconds": 0.006040096282958984,
+      "initial_fitness": 0.353023388800961,
+      "final_fitness": 0.353023388800961,
+      "task_sequence": [
+        "Silver",
+        "Gold",
+        "Bronze",
+        "Silver",
+        "Silver"
+      ],
+      "final_composition": [
+        662,
+        970,
+        698,
+        1028,
+        1137
+      ],
+      "valid_steps": 5,
+      "success": true,
+      "normalized_qos": {
+        "response_time": 0.6753226037672609,
+        "availability": 0.0,
+        "throughput": 0.04186046511627906,
+        "successability": 0.0,
+        "reliability": 0.0,
+        "compliance": 0.737313432835821,
+        "best_practices": 0.5200000000000001,
+        "latency": 0.9644885338830198,
+        "documentation": 0.39999999999999997
+      },
+      "raw_qos": {
+        "response_time": 1645.02,
+        "availability": 6.904880639999998,
+        "throughput": 1.9,
+        "successability": 7.67771136,
+        "reliability": 10.48635291,
+        "compliance": 82.4,
+        "best_practices": 73.4,
+        "latency": 138.07,
+        "documentation": 39.4
+      },
+      "pso_seconds": 0.0,
+      "pso_history": []
+    },
+    {
+      "episode": 5,
+      "seconds": 0.07272839546203613,
+      "initial_fitness": 0.44407202174160015,
+      "final_fitness": 0.44407202174160015,
+      "task_sequence": [
+        "Platinum",
+        "Platinum",
+        "Silver",
+        "Bronze",
+        "Gold"
+      ],
+      "final_composition": [
+        1516,
+        1564,
+        1325,
+        1485,
+        794
+      ],
+      "valid_steps": 5,
+      "success": true,
+      "normalized_qos": {
+        "response_time": 0.8040450908297948,
+        "availability": 0.2545292731182796,
+        "throughput": 0.24651162790697673,
+        "successability": 0.2921592904347826,
+        "reliability": 0.0,
+        "compliance": 0.835820895522388,
+        "best_practices": 0.7155555555555556,
+        "latency": 0.9701107961865498,
+        "documentation": 0.08333333333333333
+      },
+      "raw_qos": {
+        "response_time": 1007.5,
+        "availability": 30.671222400000005,
+        "throughput": 10.7,
+        "successability": 34.87865472,
+        "reliability": 24.274660800000003,
+        "compliance": 89.0,
+        "best_practices": 82.2,
+        "latency": 116.25,
+        "documentation": 9.0
+      },
+      "pso_seconds": 0.0,
+      "pso_history": []
+    },
+    {
+      "episode": 6,
+      "seconds": 0.007333517074584961,
+      "initial_fitness": 0.3408930056460488,
+      "final_fitness": 0.3408930056460488,
+      "task_sequence": [
+        "Silver",
+        "Bronze",
+        "Silver",
+        "Gold",
+        "Bronze"
+      ],
+      "final_composition": [
+        952,
+        1740,
+        681,
+        1296,
+        547
+      ],
+      "valid_steps": 5,
+      "success": true,
+      "normalized_qos": {
+        "response_time": 0.46623538414632915,
+        "availability": 0.14087922408602152,
+        "throughput": 0.03023255813953488,
+        "successability": 0.15601530434782607,
+        "reliability": 0.0,
+        "compliance": 0.7522388059701494,
+        "best_practices": 0.6133333333333332,
+        "latency": 0.9555939190930173,
+        "documentation": 0.19583333333333333
+      },
+      "raw_qos": {
+        "response_time": 2680.56,
+        "availability": 20.10176784,
+        "throughput": 1.4,
+        "successability": 22.353407999999998,
+        "reliability": 10.109697000000002,
+        "compliance": 83.4,
+        "best_practices": 77.6,
+        "latency": 172.59,
+        "documentation": 19.8
+      },
+      "pso_seconds": 0.0,
+      "pso_history": []
+    },
+    {
+      "episode": 7,
+      "seconds": 0.009164810180664062,
+      "initial_fitness": 0.3269554962830417,
+      "final_fitness": 0.3269554962830417,
+      "task_sequence": [
+        "Silver",
+        "Bronze",
+        "Bronze",
+        "Bronze",
+        "Platinum"
+      ],
+      "final_composition": [
+        1309,
+        264,
+        1254,
+        743,
+        508
+      ],
+      "valid_steps": 5,
+      "success": true,
+      "normalized_qos": {
+        "response_time": 0.42251351291323674,
+        "availability": 0.0917019582795699,
+        "throughput": 0.053488372093023255,
+        "successability": 0.10105413565217393,
+        "reliability": 0.0,
+        "compliance": 0.7044776119402986,
+        "best_practices": 0.56,
+        "latency": 0.9770780726616851,
+        "documentation": 0.24583333333333335
+      },
+      "raw_qos": {
+        "response_time": 2897.1,
+        "availability": 15.52828212,
+        "throughput": 2.4,
+        "successability": 17.296980480000002,
+        "reliability": 8.65951842,
+        "compliance": 80.2,
+        "best_practices": 75.2,
+        "latency": 89.21000000000001,
+        "documentation": 24.6
+      },
+      "pso_seconds": 0.0,
+      "pso_history": []
+    },
+    {
+      "episode": 8,
+      "seconds": 0.009491682052612305,
+      "initial_fitness": 0.34661880557878244,
+      "final_fitness": 0.34661880557878244,
+      "task_sequence": [
+        "Bronze",
+        "Bronze",
+        "Gold",
+        "Silver",
+        "Platinum"
+      ],
+      "final_composition": [
+        14,
+        649,
+        853,
+        651,
+        982
+      ],
+      "valid_steps": 5,
+      "success": true,
+      "normalized_qos": {
+        "response_time": 0.598998116167643,
+        "availability": 0.013838382795698934,
+        "throughput": 0.05116279069767441,
+        "successability": 0.026123547826086932,
+        "reliability": 0.0,
+        "compliance": 0.8686567164179105,
+        "best_practices": 0.6311111111111113,
+        "latency": 0.945119814480804,
+        "documentation": 0.3020833333333333
+      },
+      "raw_qos": {
+        "response_time": 2023.03,
+        "availability": 8.2869696,
+        "throughput": 2.3,
+        "successability": 10.403366399999998,
+        "reliability": 17.46297313,
+        "compliance": 91.2,
+        "best_practices": 78.4,
+        "latency": 213.23999999999998,
+        "documentation": 30.0
+      },
+      "pso_seconds": 0.0,
+      "pso_history": []
+    },
+    {
+      "episode": 9,
+      "seconds": 0.013287544250488281,
+      "initial_fitness": 0.4770223477644344,
+      "final_fitness": 0.4770223477644344,
+      "task_sequence": [
+        "Silver",
+        "Silver",
+        "Platinum",
+        "Platinum",
+        "Gold"
+      ],
+      "final_composition": [
+        848,
+        35,
+        1947,
+        318,
+        661
+      ],
+      "valid_steps": 5,
+      "success": true,
+      "normalized_qos": {
+        "response_time": 0.8143304520591923,
+        "availability": 0.3026989969892473,
+        "throughput": 0.09069767441860464,
+        "successability": 0.37073850543478254,
+        "reliability": 0.0,
+        "compliance": 0.8029850746268656,
+        "best_practices": 0.49777777777777793,
+        "latency": 0.9510744653439834,
+        "documentation": 0.55625
+      },
+      "raw_qos": {
+        "response_time": 956.56,
+        "availability": 35.15100672,
+        "throughput": 4.0,
+        "successability": 42.10794249999999,
+        "reliability": 20.8513112,
+        "compliance": 86.8,
+        "best_practices": 72.4,
+        "latency": 190.13,
+        "documentation": 54.4
+      },
+      "pso_seconds": 0.0,
+      "pso_history": []
+    },
+    {
+      "episode": 10,
+      "seconds": 0.06325817108154297,
+      "initial_fitness": 0.4033841508204698,
+      "final_fitness": 0.4033841508204698,
+      "task_sequence": [
+        "Bronze",
+        "Platinum",
+        "Platinum",
+        "Gold",
+        "Bronze"
+      ],
+      "final_composition": [
+        1575,
+        221,
+        674,
+        1491,
+        1288
+      ],
+      "valid_steps": 5,
+      "success": true,
+      "normalized_qos": {
+        "response_time": 0.6961739829223429,
+        "availability": 0.16302064860215057,
+        "throughput": 0.18604651162790697,
+        "successability": 0.17898718608695655,
+        "reliability": 0.0,
+        "compliance": 0.8029850746268656,
+        "best_practices": 0.7511111111111111,
+        "latency": 0.8589229580005153,
+        "documentation": 0.3145833333333333
+      },
+      "raw_qos": {
+        "response_time": 1541.75,
+        "availability": 22.160920320000002,
+        "throughput": 8.1,
+        "successability": 24.466821120000002,
+        "reliability": 21.633235369999998,
+        "compliance": 86.8,
+        "best_practices": 83.8,
+        "latency": 547.77,
+        "documentation": 31.2
+      },
+      "pso_seconds": 0.0,
+      "pso_history": []
+    },
+    {
+      "episode": 11,
+      "seconds": 0.009528398513793945,
+      "initial_fitness": 0.28579754946798613,
+      "final_fitness": 0.28579754946798613,
+      "task_sequence": [
+        "Bronze",
+        "Bronze",
+        "Gold",
+        "Platinum",
+        "Gold"
+      ],
+      "final_composition": [
+        891,
+        1868,
+        731,
+        718,
+        179
+      ],
+      "valid_steps": 5,
+      "success": true,
+      "normalized_qos": {
+        "response_time": 0.0,
+        "availability": 0.12115618279569895,
+        "throughput": 0.016279069767441864,
+        "successability": 0.1345021739130435,
+        "reliability": 0.0,
+        "compliance": 0.835820895522388,
+        "best_practices": 0.6355555555555554,
+        "latency": 0.9626256119556815,
+        "documentation": 0.3458333333333334
+      },
+      "raw_qos": {
+        "response_time": 6197.89,
+        "availability": 18.267525000000003,
+        "throughput": 0.8,
+        "successability": 20.374200000000002,
+        "reliability": 8.60116587,
+        "compliance": 89.0,
+        "best_practices": 78.6,
+        "latency": 145.3,
+        "documentation": 34.2
+      },
+      "pso_seconds": 0.0,
+      "pso_history": []
+    },
+    {
+      "episode": 12,
+      "seconds": 0.009653568267822266,
+      "initial_fitness": 0.3576169658901079,
+      "final_fitness": 0.3576169658901079,
+      "task_sequence": [
+        "Gold",
+        "Silver",
+        "Bronze",
+        "Gold",
+        "Bronze"
+      ],
+      "final_composition": [
+        785,
+        81,
+        1848,
+        1129,
+        1991
+      ],
+      "valid_steps": 5,
+      "success": true,
+      "normalized_qos": {
+        "response_time": 0.7611591323467948,
+        "availability": 0.016130537634408602,
+        "throughput": 0.05581395348837209,
+        "successability": 0.036254333260869576,
+        "reliability": 0.0,
+        "compliance": 0.7044776119402986,
+        "best_practices": 0.6355555555555554,
+        "latency": 0.92793352228807,
+        "documentation": 0.25625000000000003
+      },
+      "raw_qos": {
+        "response_time": 1219.9,
+        "availability": 8.50014,
+        "throughput": 2.5,
+        "successability": 11.335398660000001,
+        "reliability": 10.827468000000001,
+        "compliance": 80.2,
+        "best_practices": 78.6,
+        "latency": 279.94,
+        "documentation": 25.6
+      },
+      "pso_seconds": 0.0,
+      "pso_history": []
+    },
+    {
+      "episode": 13,
+      "seconds": 0.006785154342651367,
+      "initial_fitness": 0.4958291759658777,
+      "final_fitness": 0.4958291759658777,
+      "task_sequence": [
+        "Bronze",
+        "Platinum",
+        "Silver",
+        "Platinum",
+        "Platinum"
+      ],
+      "final_composition": [
+        14,
+        1564,
+        470,
+        446,
+        58
+      ],
+      "valid_steps": 5,
+      "success": true,
+      "normalized_qos": {
+        "response_time": 0.8255223949909847,
+        "availability": 0.5044405327956989,
+        "throughput": 0.05116279069767441,
+        "successability": 0.6270799999999999,
+        "reliability": 0.0,
+        "compliance": 0.835820895522388,
+        "best_practices": 0.7466666666666666,
+        "latency": 0.9667405307910333,
+        "documentation": 0.043750000000000004
+      },
+      "raw_qos": {
+        "response_time": 901.1300000000001,
+        "availability": 53.91296955,
+        "throughput": 2.3,
+        "successability": 65.69135999999999,
+        "reliability": 21.215103780000007,
+        "compliance": 89.0,
+        "best_practices": 83.6,
+        "latency": 129.32999999999998,
+        "documentation": 5.2
+      },
+      "pso_seconds": 0.0,
+      "pso_history": []
+    },
+    {
+      "episode": 14,
+      "seconds": 0.0694727897644043,
+      "initial_fitness": 0.4415416712614155,
+      "final_fitness": 0.4415416712614155,
+      "task_sequence": [
+        "Silver",
+        "Platinum",
+        "Gold",
+        "Silver",
+        "Bronze"
+      ],
+      "final_composition": [
+        1317,
+        283,
+        1268,
+        497,
+        462
+      ],
+      "valid_steps": 5,
+      "success": true,
+      "normalized_qos": {
+        "response_time": 0.7007190061118549,
+        "availability": 0.24800388817204302,
+        "throughput": 0.05813953488372093,
+        "successability": 0.3197054347826086,
+        "reliability": 0.0,
+        "compliance": 0.737313432835821,
+        "best_practices": 0.6755555555555557,
+        "latency": 0.8775908271064158,
+        "documentation": 0.5916666666666667
+      },
+      "raw_qos": {
+        "response_time": 1519.24,
+        "availability": 30.0643616,
+        "throughput": 2.6,
+        "successability": 37.41289999999999,
+        "reliability": 14.353128600000002,
+        "compliance": 82.4,
+        "best_practices": 80.4,
+        "latency": 475.32,
+        "documentation": 57.8
+      },
+      "pso_seconds": 0.0,
+      "pso_history": []
+    },
+    {
+      "episode": 15,
+      "seconds": 0.0067768096923828125,
+      "initial_fitness": 0.39487349825051266,
+      "final_fitness": 0.39487349825051266,
+      "task_sequence": [
+        "Silver",
+        "Bronze",
+        "Bronze",
+        "Gold",
+        "Gold"
+      ],
+      "final_composition": [
+        616,
+        751,
+        1530,
+        1089,
+        103
+      ],
+      "valid_steps": 5,
+      "success": true,
+      "normalized_qos": {
+        "response_time": 0.18314161856130126,
+        "availability": 0.4427405956989247,
+        "throughput": 0.025581395348837205,
+        "successability": 0.617486156521739,
+        "reliability": 0.0,
+        "compliance": 0.7701492537313432,
+        "best_practices": 0.6044444444444446,
+        "latency": 0.9766426178819891,
+        "documentation": 0.21458333333333335
+      },
+      "raw_qos": {
+        "response_time": 4082.63,
+        "availability": 48.1748754,
+        "throughput": 1.2,
+        "successability": 64.80872639999998,
+        "reliability": 13.032069499999999,
+        "compliance": 84.6,
+        "best_practices": 77.2,
+        "latency": 90.9,
+        "documentation": 21.6
+      },
+      "pso_seconds": 0.0,
+      "pso_history": []
+    },
+    {
+      "episode": 16,
+      "seconds": 0.07766437530517578,
+      "initial_fitness": 0.5083114985179247,
+      "final_fitness": 0.5083114985179247,
+      "task_sequence": [
+        "Gold",
+        "Gold",
+        "Gold",
+        "Gold",
+        "Gold"
+      ],
+      "final_composition": [
+        1261,
+        1329,
+        815,
+        376,
+        644
+      ],
+      "valid_steps": 5,
+      "success": true,
+      "normalized_qos": {
+        "response_time": 0.6127543325115543,
+        "availability": 0.5807703225806452,
+        "throughput": 0.10000000000000002,
+        "successability": 0.737585652173913,
+        "reliability": 0.0,
+        "compliance": 0.9671641791044776,
+        "best_practices": 0.7422222222222223,
+        "latency": 0.9961994331357897,
+        "documentation": 0.10625
+      },
+      "raw_qos": {
+        "response_time": 1954.9,
+        "availability": 61.01164,
+        "throughput": 4.4,
+        "successability": 75.85788,
+        "reliability": 22.15062798,
+        "compliance": 97.8,
+        "best_practices": 83.4,
+        "latency": 15.0,
+        "documentation": 11.2
+      },
+      "pso_seconds": 0.0,
+      "pso_history": []
+    },
+    {
+      "episode": 17,
+      "seconds": 0.005625009536743164,
+      "initial_fitness": 0.5849978350979983,
+      "final_fitness": 0.5849978350979983,
+      "task_sequence": [
+        "Silver",
+        "Platinum",
+        "Platinum",
+        "Platinum",
+        "Platinum"
+      ],
+      "final_composition": [
+        561,
+        280,
+        447,
+        1262,
+        532
+      ],
+      "valid_steps": 5,
+      "success": true,
+      "normalized_qos": {
+        "response_time": 0.8372837277670429,
+        "availability": 0.6010490537634408,
+        "throughput": 0.03488372093023256,
+        "successability": 0.8556718706521739,
+        "reliability": 0.0,
+        "compliance": 0.8686567164179105,
+        "best_practices": 0.6666666666666666,
+        "latency": 0.9881190414841535,
+        "documentation": 0.5520833333333334
+      },
+      "raw_qos": {
+        "response_time": 842.88,
+        "availability": 62.89756199999999,
+        "throughput": 1.6,
+        "successability": 86.7218121,
+        "reliability": 16.5667952,
+        "compliance": 91.2,
+        "best_practices": 80.0,
+        "latency": 46.36,
+        "documentation": 54.0
+      },
+      "pso_seconds": 0.0,
+      "pso_history": []
+    },
+    {
+      "episode": 18,
+      "seconds": 0.0051381587982177734,
+      "initial_fitness": 0.3931468615012846,
+      "final_fitness": 0.3931468615012846,
+      "task_sequence": [
+        "Platinum",
+        "Platinum",
+        "Bronze",
+        "Bronze",
+        "Gold"
+      ],
+      "final_composition": [
+        639,
+        442,
+        159,
+        1932,
+        1261
+      ],
+      "valid_steps": 5,
+      "success": true,
+      "normalized_qos": {
+        "response_time": 0.5668942206930807,
+        "availability": 0.19149211182795695,
+        "throughput": 0.06511627906976744,
+        "successability": 0.2393560869565217,
+        "reliability": 0.0,
+        "compliance": 0.9014925373134329,
+        "best_practices": 0.5955555555555555,
+        "latency": 0.9619840247358928,
+        "documentation": 0.29791666666666666
+      },
+      "raw_qos": {
+        "response_time": 2182.0299999999997,
+        "availability": 24.808766399999996,
+        "throughput": 2.9,
+        "successability": 30.020759999999996,
+        "reliability": 13.546993980000002,
+        "compliance": 93.4,
+        "best_practices": 76.8,
+        "latency": 147.79,
+        "documentation": 29.6
+      },
+      "pso_seconds": 0.0,
+      "pso_history": []
+    },
+    {
+      "episode": 19,
+      "seconds": 0.008139848709106445,
+      "initial_fitness": 0.3513194224713167,
+      "final_fitness": 0.3513194224713167,
+      "task_sequence": [
+        "Platinum",
+        "Bronze",
+        "Gold",
+        "Platinum",
+        "Bronze"
+      ],
+      "final_composition": [
+        713,
+        1256,
+        893,
+        1617,
+        514
+      ],
+      "valid_steps": 5,
+      "success": true,
+      "normalized_qos": {
+        "response_time": 0.22793967698231457,
+        "availability": 0.27394858279569895,
+        "throughput": 0.002325581395348837,
+        "successability": 0.3407853565217391,
+        "reliability": 0.0,
+        "compliance": 0.8029850746268656,
+        "best_practices": 0.6577777777777777,
+        "latency": 0.8565240917289358,
+        "documentation": 0.40208333333333335
+      },
+      "raw_qos": {
+        "response_time": 3860.76,
+        "availability": 32.4772182,
+        "throughput": 0.2,
+        "successability": 39.352252799999995,
+        "reliability": 15.05106773,
+        "compliance": 86.8,
+        "best_practices": 79.6,
+        "latency": 557.08,
+        "documentation": 39.6
+      },
+      "pso_seconds": 0.0,
+      "pso_history": []
+    },
+    {
+      "episode": 20,
+      "seconds": 0.08335447311401367,
+      "initial_fitness": 0.4058124246362169,
+      "final_fitness": 0.4058124246362169,
+      "task_sequence": [
+        "Gold",
+        "Platinum",
+        "Silver",
+        "Bronze",
+        "Bronze"
+      ],
+      "final_composition": [
+        1448,
+        1255,
+        681,
+        804,
+        417
+      ],
+      "valid_steps": 5,
+      "success": true,
+      "normalized_qos": {
+        "response_time": 0.3365962198167857,
+        "availability": 0.34496705720430104,
+        "throughput": 0.05813953488372093,
+        "successability": 0.4093134330434781,
+        "reliability": 0.0,
+        "compliance": 0.835820895522388,
+        "best_practices": 0.5866666666666668,
+        "latency": 0.9797217212058749,
+        "documentation": 0.3875
+      },
+      "raw_qos": {
+        "response_time": 3322.62,
+        "availability": 39.08193632,
+        "throughput": 2.6,
+        "successability": 45.656835839999985,
+        "reliability": 14.353128600000002,
+        "compliance": 89.0,
+        "best_practices": 76.4,
+        "latency": 78.95,
+        "documentation": 38.2
+      },
+      "pso_seconds": 0.0,
+      "pso_history": []
+    },
+    {
+      "episode": 21,
+      "seconds": 0.009335041046142578,
+      "initial_fitness": 0.47956173975116345,
+      "final_fitness": 0.47956173975116345,
+      "task_sequence": [
+        "Gold",
+        "Platinum",
+        "Platinum",
+        "Gold",
+        "Silver"
+      ],
+      "final_composition": [
+        1377,
+        265,
+        1761,
+        372,
+        1309
+      ],
+      "valid_steps": 5,
+      "success": true,
+      "normalized_qos": {
+        "response_time": 0.7476229993114825,
+        "availability": 0.29750827956989245,
+        "throughput": 0.04883720930232558,
+        "successability": 0.35117560869565223,
+        "reliability": 0.0,
+        "compliance": 0.737313432835821,
+        "best_practices": 0.8,
+        "latency": 0.9797784076269003,
+        "documentation": 0.5895833333333333
+      },
+      "raw_qos": {
+        "response_time": 1286.94,
+        "availability": 34.66827,
+        "throughput": 2.2,
+        "successability": 40.308156000000004,
+        "reliability": 23.114963819999996,
+        "compliance": 82.4,
+        "best_practices": 86.0,
+        "latency": 78.73,
+        "documentation": 57.6
+      },
+      "pso_seconds": 0.0,
+      "pso_history": []
+    },
+    {
+      "episode": 22,
+      "seconds": 0.00826573371887207,
+      "initial_fitness": 0.4837426053593623,
+      "final_fitness": 0.4837426053593623,
+      "task_sequence": [
+        "Platinum",
+        "Bronze",
+        "Gold",
+        "Platinum",
+        "Bronze"
+      ],
+      "final_composition": [
+        1319,
+        1453,
+        436,
+        358,
+        353
+      ],
+      "valid_steps": 5,
+      "success": true,
+      "normalized_qos": {
+        "response_time": 0.6457062554137466,
+        "availability": 0.4462596989247312,
+        "throughput": 0.020930232558139535,
+        "successability": 0.5554086956521739,
+        "reliability": 0.0,
+        "compliance": 0.8686567164179105,
+        "best_practices": 0.648888888888889,
+        "latency": 0.9692991497036846,
+        "documentation": 0.41041666666666665
+      },
+      "raw_qos": {
+        "response_time": 1791.7,
+        "availability": 48.502152,
+        "throughput": 1.0,
+        "successability": 59.09759999999999,
+        "reliability": 17.138064,
+        "compliance": 91.2,
+        "best_practices": 79.2,
+        "latency": 119.4,
+        "documentation": 40.4
+      },
+      "pso_seconds": 0.0,
+      "pso_history": []
+    },
+    {
+      "episode": 23,
+      "seconds": 0.006311178207397461,
+      "initial_fitness": 0.4974028808693317,
+      "final_fitness": 0.4974028808693317,
+      "task_sequence": [
+        "Bronze",
+        "Platinum",
+        "Gold",
+        "Gold",
+        "Platinum"
+      ],
+      "final_composition": [
+        72,
+        1365,
+        1946,
+        174,
+        1071
+      ],
+      "valid_steps": 5,
+      "success": true,
+      "normalized_qos": {
+        "response_time": 0.7955708738922641,
+        "availability": 0.46763575569892474,
+        "throughput": 0.05581395348837209,
+        "successability": 0.5392917391304346,
+        "reliability": 0.0,
+        "compliance": 0.8686567164179105,
+        "best_practices": 0.6177777777777778,
+        "latency": 0.9703195052821437,
+        "documentation": 0.28541666666666665
+      },
+      "raw_qos": {
+        "response_time": 1049.47,
+        "availability": 50.49012528,
+        "throughput": 2.5,
+        "successability": 57.61483999999999,
+        "reliability": 15.05106773,
+        "compliance": 91.2,
+        "best_practices": 77.8,
+        "latency": 115.44,
+        "documentation": 28.4
+      },
+      "pso_seconds": 0.0,
+      "pso_history": []
+    },
+    {
+      "episode": 24,
+      "seconds": 0.0695643424987793,
+      "initial_fitness": 0.43917598285711873,
+      "final_fitness": 0.43917598285711873,
+      "task_sequence": [
+        "Platinum",
+        "Platinum",
+        "Gold",
+        "Silver",
+        "Silver"
+      ],
+      "final_composition": [
+        586,
+        310,
+        973,
+        1174,
+        100
+      ],
+      "valid_steps": 5,
+      "success": true,
+      "normalized_qos": {
+        "response_time": 0.7572622444055429,
+        "availability": 0.2356374021505376,
+        "throughput": 0.08139534883720931,
+        "successability": 0.24470002086956527,
+        "reliability": 0.034126959642857155,
+        "compliance": 0.7701492537313432,
+        "best_practices": 0.8799999999999999,
+        "latency": 0.9541999484668899,
+        "documentation": 0.26875
+      },
+      "raw_qos": {
+        "response_time": 1239.2,
+        "availability": 28.914278399999997,
+        "throughput": 3.6,
+        "successability": 30.512401920000006,
+        "reliability": 34.91110974,
+        "compliance": 84.6,
+        "best_practices": 89.6,
+        "latency": 178.0,
+        "documentation": 26.8
+      },
+      "pso_seconds": 0.0,
+      "pso_history": []
+    },
+    {
+      "episode": 25,
+      "seconds": 0.008008718490600586,
+      "initial_fitness": 0.43103961434866883,
+      "final_fitness": 0.43103961434866883,
+      "task_sequence": [
+        "Gold",
+        "Silver",
+        "Platinum",
+        "Silver",
+        "Bronze"
+      ],
+      "final_composition": [
+        600,
+        1207,
+        1342,
+        434,
+        342
+      ],
+      "valid_steps": 5,
+      "success": true,
+      "normalized_qos": {
+        "response_time": 0.7069721988341642,
+        "availability": 0.25093298924731183,
+        "throughput": 0.05581395348837209,
+        "successability": 0.3129898295652174,
+        "reliability": 0.0,
+        "compliance": 0.8029850746268656,
+        "best_practices": 0.6444444444444445,
+        "latency": 0.877624323627931,
+        "documentation": 0.46458333333333335
+      },
+      "raw_qos": {
+        "response_time": 1488.27,
+        "availability": 30.336768000000003,
+        "throughput": 2.5,
+        "successability": 36.79506432,
+        "reliability": 15.436800000000003,
+        "compliance": 86.8,
+        "best_practices": 79.0,
+        "latency": 475.19,
+        "documentation": 45.6
+      },
+      "pso_seconds": 0.0,
+      "pso_history": []
+    },
+    {
+      "episode": 26,
+      "seconds": 0.011466264724731445,
+      "initial_fitness": 0.32206940856256566,
+      "final_fitness": 0.32206940856256566,
+      "task_sequence": [
+        "Bronze",
+        "Gold",
+        "Silver",
+        "Bronze",
+        "Platinum"
+      ],
+      "final_composition": [
+        315,
+        439,
+        492,
+        605,
+        1911
+      ],
+      "valid_steps": 5,
+      "success": true,
+      "normalized_qos": {
+        "response_time": 0.3140306137901374,
+        "availability": 0.07024300086021504,
+        "throughput": 0.05116279069767441,
+        "successability": 0.08663130434782607,
+        "reliability": 0.0,
+        "compliance": 0.7701492537313432,
+        "best_practices": 0.5955555555555555,
+        "latency": 0.9796469981963412,
+        "documentation": 0.3541666666666667
+      },
+      "raw_qos": {
+        "response_time": 3434.38,
+        "availability": 13.532599079999999,
+        "throughput": 2.3,
+        "successability": 15.970079999999998,
+        "reliability": 18.659067180000005,
+        "compliance": 84.6,
+        "best_practices": 76.8,
+        "latency": 79.24,
+        "documentation": 35.0
+      },
+      "pso_seconds": 0.0,
+      "pso_history": []
+    },
+    {
+      "episode": 27,
+      "seconds": 0.008808374404907227,
+      "initial_fitness": 0.45590457732996925,
+      "final_fitness": 0.45590457732996925,
+      "task_sequence": [
+        "Platinum",
+        "Bronze",
+        "Platinum",
+        "Bronze",
+        "Platinum"
+      ],
+      "final_composition": [
+        732,
+        300,
+        476,
+        2000,
+        572
+      ],
+      "valid_steps": 5,
+      "success": true,
+      "normalized_qos": {
+        "response_time": 0.299626262197966,
+        "availability": 0.5318498924731181,
+        "throughput": 0.027906976744186046,
+        "successability": 0.6421123478260868,
+        "reliability": 0.0,
+        "compliance": 0.9014925373134329,
+        "best_practices": 0.6577777777777777,
+        "latency": 0.9775624838959032,
+        "documentation": 0.3958333333333333
+      },
+      "raw_qos": {
+        "response_time": 3505.72,
+        "availability": 56.46203999999999,
+        "throughput": 1.3,
+        "successability": 67.07433599999999,
+        "reliability": 17.46297313,
+        "compliance": 93.4,
+        "best_practices": 79.6,
+        "latency": 87.33,
+        "documentation": 39.0
+      },
+      "pso_seconds": 0.0,
+      "pso_history": []
+    },
+    {
+      "episode": 28,
+      "seconds": 0.006810665130615234,
+      "initial_fitness": 0.4977748906126766,
+      "final_fitness": 0.4977748906126766,
+      "task_sequence": [
+        "Gold",
+        "Gold",
+        "Gold",
+        "Platinum",
+        "Bronze"
+      ],
+      "final_composition": [
+        1725,
+        1424,
+        1912,
+        1269,
+        768
+      ],
+      "valid_steps": 5,
+      "success": true,
+      "normalized_qos": {
+        "response_time": 0.620582433313748,
+        "availability": 0.47200337204301074,
+        "throughput": 0.013953488372093023,
+        "successability": 0.6986422608695652,
+        "reliability": 0.0,
+        "compliance": 0.8686567164179105,
+        "best_practices": 0.5777777777777777,
+        "latency": 0.9020381345014171,
+        "documentation": 0.5499999999999999
+      },
+      "raw_qos": {
+        "response_time": 1916.1299999999999,
+        "availability": 50.8963136,
+        "throughput": 0.7,
+        "successability": 72.275088,
+        "reliability": 15.051067729999998,
+        "compliance": 91.2,
+        "best_practices": 76.0,
+        "latency": 380.44,
+        "documentation": 53.8
+      },
+      "pso_seconds": 0.0,
+      "pso_history": []
+    },
+    {
+      "episode": 29,
+      "seconds": 0.006733894348144531,
+      "initial_fitness": 0.5618665039998135,
+      "final_fitness": 0.5618665039998135,
+      "task_sequence": [
+        "Platinum",
+        "Platinum",
+        "Platinum",
+        "Gold",
+        "Silver"
+      ],
+      "final_composition": [
+        744,
+        1705,
+        1091,
+        491,
+        955
+      ],
+      "valid_steps": 5,
+      "success": true,
+      "normalized_qos": {
+        "response_time": 0.861826045345238,
+        "availability": 0.4572431827956988,
+        "throughput": 0.30697674418604654,
+        "successability": 0.6052217391304349,
+        "reliability": 0.0,
+        "compliance": 0.7044776119402986,
+        "best_practices": 0.648888888888889,
+        "latency": 0.9924529760371038,
+        "documentation": 0.5625
+      },
+      "raw_qos": {
+        "response_time": 721.3299999999999,
+        "availability": 49.52361599999999,
+        "throughput": 13.3,
+        "successability": 63.680400000000006,
+        "reliability": 19.85516123,
+        "compliance": 80.2,
+        "best_practices": 79.2,
+        "latency": 29.54,
+        "documentation": 55.0
+      },
+      "pso_seconds": 0.0,
+      "pso_history": []
+    },
+    {
+      "episode": 30,
+      "seconds": 0.011468172073364258,
+      "initial_fitness": 0.584164373743779,
+      "final_fitness": 0.584164373743779,
+      "task_sequence": [
+        "Gold",
+        "Gold",
+        "Silver",
+        "Platinum",
+        "Platinum"
+      ],
+      "final_composition": [
+        1878,
+        785,
+        404,
+        1961,
+        1321
+      ],
+      "valid_steps": 5,
+      "success": true,
+      "normalized_qos": {
+        "response_time": 0.8593183070949609,
+        "availability": 0.6772194408602151,
+        "throughput": 0.027906976744186046,
+        "successability": 0.9050751304347825,
+        "reliability": 0.0,
+        "compliance": 0.8029850746268656,
+        "best_practices": 0.6266666666666667,
+        "latency": 0.9690749806750838,
+        "documentation": 0.4354166666666666
+      },
+      "raw_qos": {
+        "response_time": 733.75,
+        "availability": 69.981408,
+        "throughput": 1.3,
+        "successability": 91.26691199999999,
+        "reliability": 14.353128600000002,
+        "compliance": 86.8,
+        "best_practices": 78.2,
+        "latency": 120.27,
+        "documentation": 42.8
+      },
+      "pso_seconds": 0.0,
+      "pso_history": []
+    },
+    {
+      "episode": 31,
+      "seconds": 0.06946468353271484,
+      "initial_fitness": 0.4508399387886324,
+      "final_fitness": 0.4508399387886324,
+      "task_sequence": [
+        "Bronze",
+        "Silver",
+        "Platinum",
+        "Gold",
+        "Platinum"
+      ],
+      "final_composition": [
+        1785,
+        1081,
+        909,
+        760,
+        1899
+      ],
+      "valid_steps": 5,
+      "success": true,
+      "normalized_qos": {
+        "response_time": 0.0,
+        "availability": 0.686706462795699,
+        "throughput": 0.03023255813953488,
+        "successability": 0.8355387826086956,
+        "reliability": 0.0,
+        "compliance": 1.0,
+        "best_practices": 0.5777777777777777,
+        "latency": 0.9824529760371039,
+        "documentation": 0.35000000000000003
+      },
+      "raw_qos": {
+        "response_time": 6160.17,
+        "availability": 70.86370104000001,
+        "throughput": 1.4,
+        "successability": 84.869568,
+        "reliability": 12.4250964,
+        "compliance": 100.0,
+        "best_practices": 76.0,
+        "latency": 68.35,
+        "documentation": 34.6
+      },
+      "pso_seconds": 0.0,
+      "pso_history": []
+    },
+    {
+      "episode": 32,
+      "seconds": 0.007179975509643555,
+      "initial_fitness": 0.5056330807276838,
+      "final_fitness": 0.5056330807276838,
+      "task_sequence": [
+        "Bronze",
+        "Bronze",
+        "Platinum",
+        "Silver",
+        "Platinum"
+      ],
+      "final_composition": [
+        967,
+        1774,
+        1182,
+        1526,
+        732
+      ],
+      "valid_steps": 5,
+      "success": true,
+      "normalized_qos": {
+        "response_time": 0.8268085699228901,
+        "availability": 0.460471569892473,
+        "throughput": 0.046511627906976744,
+        "successability": 0.5714752608695651,
+        "reliability": 0.0,
+        "compliance": 0.8686567164179105,
+        "best_practices": 0.5822222222222223,
+        "latency": 0.9518783818603452,
+        "documentation": 0.3541666666666667
+      },
+      "raw_qos": {
+        "response_time": 894.76,
+        "availability": 49.82385599999999,
+        "throughput": 2.1,
+        "successability": 60.575723999999994,
+        "reliability": 11.3539674,
+        "compliance": 91.2,
+        "best_practices": 76.2,
+        "latency": 187.01,
+        "documentation": 35.0
+      },
+      "pso_seconds": 0.0,
+      "pso_history": []
+    },
+    {
+      "episode": 33,
+      "seconds": 0.0067822933197021484,
+      "initial_fitness": 0.46234948982419505,
+      "final_fitness": 0.46234948982419505,
+      "task_sequence": [
+        "Silver",
+        "Bronze",
+        "Platinum",
+        "Bronze",
+        "Platinum"
+      ],
+      "final_composition": [
+        207,
+        14,
+        1262,
+        958,
+        1289
+      ],
+      "valid_steps": 5,
+      "success": true,
+      "normalized_qos": {
+        "response_time": 0.8226552546404263,
+        "availability": 0.2973311827956989,
+        "throughput": 0.023255813953488372,
+        "successability": 0.3841071086956522,
+        "reliability": 0.0,
+        "compliance": 0.6388059701492537,
+        "best_practices": 0.6666666666666666,
+        "latency": 0.9806106673537748,
+        "documentation": 0.41250000000000003
+      },
+      "raw_qos": {
+        "response_time": 915.33,
+        "availability": 34.6518,
+        "throughput": 1.1,
+        "successability": 43.337854,
+        "reliability": 19.026821469999998,
+        "compliance": 75.8,
+        "best_practices": 80.0,
+        "latency": 75.5,
+        "documentation": 40.6
+      },
+      "pso_seconds": 0.0,
+      "pso_history": []
+    },
+    {
+      "episode": 34,
+      "seconds": 0.009597301483154297,
+      "initial_fitness": 0.38182927680595535,
+      "final_fitness": 0.38182927680595535,
+      "task_sequence": [
+        "Bronze",
+        "Gold",
+        "Gold",
+        "Platinum",
+        "Platinum"
+      ],
+      "final_composition": [
+        315,
+        695,
+        425,
+        1422,
+        977
+      ],
+      "valid_steps": 5,
+      "success": true,
+      "normalized_qos": {
+        "response_time": 0.5977684763975795,
+        "availability": 0.17573746236559135,
+        "throughput": 0.08604651162790697,
+        "successability": 0.21369043478260866,
+        "reliability": 0.0,
+        "compliance": 0.7701492537313432,
+        "best_practices": 0.6844444444444444,
+        "latency": 0.883166709610925,
+        "documentation": 0.30624999999999997
+      },
+      "raw_qos": {
+        "response_time": 2029.12,
+        "availability": 23.343583999999996,
+        "throughput": 3.8,
+        "successability": 27.659519999999997,
+        "reliability": 20.972608000000005,
+        "compliance": 84.6,
+        "best_practices": 80.8,
+        "latency": 453.68,
+        "documentation": 30.4
+      },
+      "pso_seconds": 0.0,
+      "pso_history": []
+    },
+    {
+      "episode": 35,
+      "seconds": 0.07005810737609863,
+      "initial_fitness": 0.35841424071959077,
+      "final_fitness": 0.35841424071959077,
+      "task_sequence": [
+        "Bronze",
+        "Bronze",
+        "Gold",
+        "Gold",
+        "Gold"
+      ],
+      "final_composition": [
+        1919,
+        581,
+        398,
+        847,
+        559
+      ],
+      "valid_steps": 5,
+      "success": true,
+      "normalized_qos": {
+        "response_time": 0.4164561741444514,
+        "availability": 0.17079894021505374,
+        "throughput": 0.037209302325581395,
+        "successability": 0.176,
+        "reliability": 0.0,
+        "compliance": 0.8029850746268656,
+        "best_practices": 0.6711111111111112,
+        "latency": 0.9617237825302757,
+        "documentation": 0.3104166666666667
+      },
+      "raw_qos": {
+        "response_time": 2927.1,
+        "availability": 22.884301439999998,
+        "throughput": 1.7,
+        "successability": 24.192,
+        "reliability": 17.2124072,
+        "compliance": 86.8,
+        "best_practices": 80.2,
+        "latency": 148.8,
+        "documentation": 30.8
+      },
+      "pso_seconds": 0.0,
+      "pso_history": []
+    },
+    {
+      "episode": 36,
+      "seconds": 0.005497455596923828,
+      "initial_fitness": 0.39545557903558515,
+      "final_fitness": 0.39545557903558515,
+      "task_sequence": [
+        "Platinum",
+        "Gold",
+        "Bronze",
+        "Platinum",
+        "Bronze"
+      ],
+      "final_composition": [
+        5,
+        183,
+        1677,
+        1123,
+        721
+      ],
+      "valid_steps": 5,
+      "success": true,
+      "normalized_qos": {
+        "response_time": 0.6639792273662489,
+        "availability": 0.13477843956989252,
+        "throughput": 0.018604651162790697,
+        "successability": 0.16689669565217388,
+        "reliability": 0.0,
+        "compliance": 0.8029850746268656,
+        "best_practices": 0.6133333333333332,
+        "latency": 0.8529502705488277,
+        "documentation": 0.5833333333333334
+      },
+      "raw_qos": {
+        "response_time": 1701.2,
+        "availability": 19.534394880000004,
+        "throughput": 0.9,
+        "successability": 23.354495999999997,
+        "reliability": 17.462973129999998,
+        "compliance": 86.8,
+        "best_practices": 77.6,
+        "latency": 570.95,
+        "documentation": 57.0
+      },
+      "pso_seconds": 0.0,
+      "pso_history": []
+    },
+    {
+      "episode": 37,
+      "seconds": 0.0066187381744384766,
+      "initial_fitness": 0.44111289055640657,
+      "final_fitness": 0.44111289055640657,
+      "task_sequence": [
+        "Bronze",
+        "Bronze",
+        "Platinum",
+        "Platinum",
+        "Bronze"
+      ],
+      "final_composition": [
+        16,
+        1877,
+        1702,
+        937,
+        21
+      ],
+      "valid_steps": 5,
+      "success": true,
+      "normalized_qos": {
+        "response_time": 0.7249322082836127,
+        "availability": 0.32459997311827954,
+        "throughput": 0.023255813953488372,
+        "successability": 0.3442479643478261,
+        "reliability": 0.0,
+        "compliance": 0.8686567164179105,
+        "best_practices": 0.43999999999999995,
+        "latency": 0.9294434424117496,
+        "documentation": 0.42083333333333334
+      },
+      "raw_qos": {
+        "response_time": 1399.32,
+        "availability": 37.187797499999995,
+        "throughput": 1.1,
+        "successability": 39.67081272,
+        "reliability": 7.933655330000001,
+        "compliance": 91.2,
+        "best_practices": 69.8,
+        "latency": 274.08,
+        "documentation": 41.4
+      },
+      "pso_seconds": 0.0,
+      "pso_history": []
+    },
+    {
+      "episode": 38,
+      "seconds": 0.006324052810668945,
+      "initial_fitness": 0.32645227163993623,
+      "final_fitness": 0.32645227163993623,
+      "task_sequence": [
+        "Bronze",
+        "Bronze",
+        "Gold",
+        "Silver",
+        "Bronze"
+      ],
+      "final_composition": [
+        838,
+        536,
+        461,
+        1079,
+        296
+      ],
+      "valid_steps": 5,
+      "success": true,
+      "normalized_qos": {
+        "response_time": 0.07728154712508606,
+        "availability": 0.2785066666666667,
+        "throughput": 0.044186046511627906,
+        "successability": 0.3099328426086955,
+        "reliability": 0.0,
+        "compliance": 0.7044776119402986,
+        "best_practices": 0.591111111111111,
+        "latency": 0.9484514300438032,
+        "documentation": 0.30624999999999997
+      },
+      "raw_qos": {
+        "response_time": 4606.92,
+        "availability": 32.90112,
+        "throughput": 2.0,
+        "successability": 36.513821519999986,
+        "reliability": 12.678596930000003,
+        "compliance": 80.2,
+        "best_practices": 76.6,
+        "latency": 200.31,
+        "documentation": 30.4
+      },
+      "pso_seconds": 0.0,
+      "pso_history": []
+    },
+    {
+      "episode": 39,
+      "seconds": 0.07985234260559082,
+      "initial_fitness": 0.35765279953547413,
+      "final_fitness": 0.35765279953547413,
+      "task_sequence": [
+        "Bronze",
+        "Silver",
+        "Bronze",
+        "Gold",
+        "Bronze"
+      ],
+      "final_composition": [
+        747,
+        137,
+        301,
+        246,
+        1403
+      ],
+      "valid_steps": 5,
+      "success": true,
+      "normalized_qos": {
+        "response_time": 0.7910420036061356,
+        "availability": 0.0,
+        "throughput": 0.04186046511627906,
+        "successability": 0.0,
+        "reliability": 0.0,
+        "compliance": 0.737313432835821,
+        "best_practices": 0.5777777777777777,
+        "latency": 0.9798170574594177,
+        "documentation": 0.22083333333333333
+      },
+      "raw_qos": {
+        "response_time": 1071.9,
+        "availability": 2.2594779999999997,
+        "throughput": 1.9,
+        "successability": 2.7062308,
+        "reliability": 9.503213,
+        "compliance": 82.4,
+        "best_practices": 76.0,
+        "latency": 78.58,
+        "documentation": 22.2
+      },
+      "pso_seconds": 0.0,
+      "pso_history": []
+    },
+    {
+      "episode": 40,
+      "seconds": 0.0059888362884521484,
+      "initial_fitness": 0.4659512546276265,
+      "final_fitness": 0.4659512546276265,
+      "task_sequence": [
+        "Silver",
+        "Platinum",
+        "Bronze",
+        "Silver",
+        "Platinum"
+      ],
+      "final_composition": [
+        212,
+        552,
+        61,
+        1755,
+        1965
+      ],
+      "valid_steps": 5,
+      "success": true,
+      "normalized_qos": {
+        "response_time": 0.8046952451909779,
+        "availability": 0.37241872473118265,
+        "throughput": 0.03953488372093023,
+        "successability": 0.3859924765217391,
+        "reliability": 0.0,
+        "compliance": 0.835820895522388,
+        "best_practices": 0.6666666666666666,
+        "latency": 0.9266580778149962,
+        "documentation": 0.32708333333333334
+      },
+      "raw_qos": {
+        "response_time": 1004.28,
+        "availability": 41.63494139999999,
+        "throughput": 1.8,
+        "successability": 43.51130784,
+        "reliability": 13.813993669999999,
+        "compliance": 89.0,
+        "best_practices": 80.0,
+        "latency": 284.89,
+        "documentation": 32.4
+      },
+      "pso_seconds": 0.0,
+      "pso_history": []
+    },
+    {
+      "episode": 41,
+      "seconds": 0.005764961242675781,
+      "initial_fitness": 0.3122148439698941,
+      "final_fitness": 0.3122148439698941,
+      "task_sequence": [
+        "Platinum",
+        "Bronze",
+        "Gold",
+        "Bronze",
+        "Gold"
+      ],
+      "final_composition": [
+        508,
+        1043,
+        1731,
+        1135,
+        1935
+      ],
+      "valid_steps": 5,
+      "success": true,
+      "normalized_qos": {
+        "response_time": 0.317117837449295,
+        "availability": 0.06810960860215057,
+        "throughput": 0.03255813953488372,
+        "successability": 0.07563826086956521,
+        "reliability": 0.0,
+        "compliance": 0.8029850746268656,
+        "best_practices": 0.6799999999999998,
+        "latency": 0.8672455552692604,
+        "documentation": 0.39375
+      },
+      "raw_qos": {
+        "response_time": 3419.09,
+        "availability": 13.334193600000003,
+        "throughput": 1.5,
+        "successability": 14.95872,
+        "reliability": 16.3193106,
+        "compliance": 86.8,
+        "best_practices": 80.6,
+        "latency": 515.47,
+        "documentation": 38.8
+      },
+      "pso_seconds": 0.0,
+      "pso_history": []
+    },
+    {
+      "episode": 42,
+      "seconds": 0.0050966739654541016,
+      "initial_fitness": 0.5549967820530816,
+      "final_fitness": 0.5549967820530816,
+      "task_sequence": [
+        "Gold",
+        "Silver",
+        "Platinum",
+        "Gold",
+        "Silver"
+      ],
+      "final_composition": [
+        293,
+        1733,
+        572,
+        1609,
+        399
+      ],
+      "valid_steps": 5,
+      "success": true,
+      "normalized_qos": {
+        "response_time": 0.8198608023550933,
+        "availability": 0.5714503741935483,
+        "throughput": 0.046511627906976744,
+        "successability": 0.8365307130434781,
+        "reliability": 0.0,
+        "compliance": 0.737313432835821,
+        "best_practices": 0.6755555555555557,
+        "latency": 0.9406828137078073,
+        "documentation": 0.46249999999999997
+      },
+      "raw_qos": {
+        "response_time": 929.17,
+        "availability": 60.144884799999986,
+        "throughput": 2.1,
+        "successability": 84.96082559999999,
+        "reliability": 17.038944599999997,
+        "compliance": 82.4,
+        "best_practices": 80.4,
+        "latency": 230.46,
+        "documentation": 45.4
+      },
+      "pso_seconds": 0.0,
+      "pso_history": []
+    },
+    {
+      "episode": 43,
+      "seconds": 0.0768899917602539,
+      "initial_fitness": 0.43015360442495076,
+      "final_fitness": 0.43015360442495076,
+      "task_sequence": [
+        "Bronze",
+        "Platinum",
+        "Gold",
+        "Gold",
+        "Bronze"
+      ],
+      "final_composition": [
+        868,
+        1504,
+        1844,
+        1745,
+        462
+      ],
+      "valid_steps": 5,
+      "success": true,
+      "normalized_qos": {
+        "response_time": 0.7776108644428157,
+        "availability": 0.1949272086021506,
+        "throughput": 0.044186046511627906,
+        "successability": 0.23498276695652176,
+        "reliability": 0.0,
+        "compliance": 0.8686567164179105,
+        "best_practices": 0.6222222222222222,
+        "latency": 0.9412471012625612,
+        "documentation": 0.40625
+      },
+      "raw_qos": {
+        "response_time": 1138.42,
+        "availability": 25.128230400000007,
+        "throughput": 2.0,
+        "successability": 29.61841456,
+        "reliability": 12.4250964,
+        "compliance": 91.2,
+        "best_practices": 78.0,
+        "latency": 228.26999999999998,
+        "documentation": 40.0
+      },
+      "pso_seconds": 0.0,
+      "pso_history": []
+    },
+    {
+      "episode": 44,
+      "seconds": 0.007375001907348633,
+      "initial_fitness": 0.3552528159253856,
+      "final_fitness": 0.3552528159253856,
+      "task_sequence": [
+        "Gold",
+        "Silver",
+        "Gold",
+        "Bronze",
+        "Bronze"
+      ],
+      "final_composition": [
+        1018,
+        1570,
+        2,
+        770,
+        878
+      ],
+      "valid_steps": 5,
+      "success": true,
+      "normalized_qos": {
+        "response_time": 0.40886834778008624,
+        "availability": 0.1788572627956989,
+        "throughput": 0.04186046511627906,
+        "successability": 0.19067063652173918,
+        "reliability": 0.0,
+        "compliance": 0.737313432835821,
+        "best_practices": 0.7688888888888887,
+        "latency": 0.9624272094820921,
+        "documentation": 0.24166666666666667
+      },
+      "raw_qos": {
+        "response_time": 2964.6800000000003,
+        "availability": 23.63372544,
+        "throughput": 1.9,
+        "successability": 25.541698560000004,
+        "reliability": 18.727278379999994,
+        "compliance": 82.4,
+        "best_practices": 84.6,
+        "latency": 146.07,
+        "documentation": 24.2
+      },
+      "pso_seconds": 0.0,
+      "pso_history": []
+    },
+    {
+      "episode": 45,
+      "seconds": 0.0068514347076416016,
+      "initial_fitness": 0.35402201142462075,
+      "final_fitness": 0.35402201142462075,
+      "task_sequence": [
+        "Bronze",
+        "Bronze",
+        "Bronze",
+        "Bronze",
+        "Silver"
+      ],
+      "final_composition": [
+        1764,
+        1388,
+        463,
+        691,
+        254
+      ],
+      "valid_steps": 5,
+      "success": true,
+      "normalized_qos": {
+        "response_time": 0.8437489273462597,
+        "availability": 0.057535182795698914,
+        "throughput": 0.0,
+        "successability": 0.05336143347826086,
+        "reliability": 0.0,
+        "compliance": 0.8029850746268656,
+        "best_practices": 0.4755555555555557,
+        "latency": 0.9637748003091986,
+        "documentation": 0.049999999999999996
+      },
+      "raw_qos": {
+        "response_time": 810.86,
+        "availability": 12.350772,
+        "throughput": 0.1,
+        "successability": 12.90925188,
+        "reliability": 12.678596930000003,
+        "compliance": 86.8,
+        "best_practices": 71.4,
+        "latency": 140.84,
+        "documentation": 5.8
+      },
+      "pso_seconds": 0.0,
+      "pso_history": []
+    },
+    {
+      "episode": 46,
+      "seconds": 0.0047032833099365234,
+      "initial_fitness": 0.4479466643715028,
+      "final_fitness": 0.4479466643715028,
+      "task_sequence": [
+        "Gold",
+        "Silver",
+        "Gold",
+        "Gold",
+        "Bronze"
+      ],
+      "final_composition": [
+        1376,
+        1723,
+        530,
+        1859,
+        517
+      ],
+      "valid_steps": 5,
+      "success": true,
+      "normalized_qos": {
+        "response_time": 0.8405062319920366,
+        "availability": 0.2317240860215054,
+        "throughput": 0.05581395348837209,
+        "successability": 0.2305634782608695,
+        "reliability": 0.0,
+        "compliance": 0.9014925373134329,
+        "best_practices": 0.5866666666666668,
+        "latency": 0.9687760886369493,
+        "documentation": 0.3875
+      },
+      "raw_qos": {
+        "response_time": 826.92,
+        "availability": 28.550340000000002,
+        "throughput": 2.5,
+        "successability": 29.211839999999995,
+        "reliability": 14.436624000000004,
+        "compliance": 93.4,
+        "best_practices": 76.4,
+        "latency": 121.43,
+        "documentation": 38.2
+      },
+      "pso_seconds": 0.0,
+      "pso_history": []
+    },
+    {
+      "episode": 47,
+      "seconds": 0.07792282104492188,
+      "initial_fitness": 0.43412688542001554,
+      "final_fitness": 0.43412688542001554,
+      "task_sequence": [
+        "Gold",
+        "Platinum",
+        "Bronze",
+        "Bronze",
+        "Silver"
+      ],
+      "final_composition": [
+        341,
+        1897,
+        1155,
+        1058,
+        1471
+      ],
+      "valid_steps": 5,
+      "success": true,
+      "normalized_qos": {
+        "response_time": 0.8489501622357233,
+        "availability": 0.14971673763440863,
+        "throughput": 0.04186046511627906,
+        "successability": 0.17638347826086961,
+        "reliability": 0.0,
+        "compliance": 0.7701492537313432,
+        "best_practices": 0.6311111111111113,
+        "latency": 0.9843184746199433,
+        "documentation": 0.4479166666666667
+      },
+      "raw_qos": {
+        "response_time": 785.1,
+        "availability": 20.9236566,
+        "throughput": 1.9,
+        "successability": 24.227280000000004,
+        "reliability": 10.71129,
+        "compliance": 84.6,
+        "best_practices": 78.4,
+        "latency": 61.11,
+        "documentation": 44.0
+      },
+      "pso_seconds": 0.0,
+      "pso_history": []
+    },
+    {
+      "episode": 48,
+      "seconds": 0.006379604339599609,
+      "initial_fitness": 0.44925624190704183,
+      "final_fitness": 0.44925624190704183,
+      "task_sequence": [
+        "Platinum",
+        "Silver",
+        "Bronze",
+        "Silver",
+        "Bronze"
+      ],
+      "final_composition": [
+        1820,
+        941,
+        1880,
+        716,
+        234
+      ],
+      "valid_steps": 5,
+      "success": true,
+      "normalized_qos": {
+        "response_time": 0.5326399699555997,
+        "availability": 0.5023802150537634,
+        "throughput": 0.07906976744186046,
+        "successability": 0.542709304347826,
+        "reliability": 0.0,
+        "compliance": 0.8686567164179105,
+        "best_practices": 0.5555555555555556,
+        "latency": 0.9332646225199691,
+        "documentation": 0.20625000000000002
+      },
+      "raw_qos": {
+        "response_time": 2351.6800000000003,
+        "availability": 53.72136,
+        "throughput": 3.5,
+        "successability": 57.929255999999995,
+        "reliability": 10.92748753,
+        "compliance": 91.2,
+        "best_practices": 75.0,
+        "latency": 259.25,
+        "documentation": 20.8
+      },
+      "pso_seconds": 0.0,
+      "pso_history": []
+    },
+    {
+      "episode": 49,
+      "seconds": 0.008009672164916992,
+      "initial_fitness": 0.506034186556529,
+      "final_fitness": 0.506034186556529,
+      "task_sequence": [
+        "Gold",
+        "Platinum",
+        "Silver",
+        "Gold",
+        "Silver"
+      ],
+      "final_composition": [
+        1696,
+        56,
+        1219,
+        218,
+        1843
+      ],
+      "valid_steps": 5,
+      "success": true,
+      "normalized_qos": {
+        "response_time": 0.7629763339774304,
+        "availability": 0.4088796989247312,
+        "throughput": 0.03023255813953488,
+        "successability": 0.47854608695652173,
+        "reliability": 0.0,
+        "compliance": 0.9014925373134329,
+        "best_practices": 0.6711111111111112,
+        "latency": 0.9230404534913682,
+        "documentation": 0.6229166666666667
+      },
+      "raw_qos": {
+        "response_time": 1210.9,
+        "availability": 45.025812,
+        "throughput": 1.4,
+        "successability": 52.02624,
+        "reliability": 14.353128600000002,
+        "compliance": 93.4,
+        "best_practices": 80.2,
+        "latency": 298.92999999999995,
+        "documentation": 60.8
+      },
+      "pso_seconds": 0.0,
+      "pso_history": []
+    }
+  ],
+  "test_metrics": [
+    {
+      "episode": 0,
+      "seconds": 0.002293825149536133,
+      "initial_fitness": 0.27969504129690215,
+      "final_fitness": 0.27969504129690215,
+      "task_sequence": [
+        "Silver",
+        "Bronze",
+        "Bronze",
+        "Gold",
+        "Silver"
+      ],
+      "final_composition": [
+        369,
+        180,
+        385,
+        259,
+        35
+      ],
+      "valid_steps": 5,
+      "success": true,
+      "normalized_qos": {
+        "response_time": 0.0,
+        "availability": 0.30177694279569894,
+        "throughput": 0.004651162790697674,
+        "successability": 0.3322204973913043,
+        "reliability": 0.0,
+        "compliance": 0.7044776119402986,
+        "best_practices": 0.551111111111111,
+        "latency": 0.34891265137851074,
+        "documentation": 0.8562500000000001
+      },
+      "raw_qos": {
+        "response_time": 6636.5599999999995,
+        "availability": 35.06525568,
+        "throughput": 0.3,
+        "successability": 38.56428576,
+        "reliability": 17.46297313,
+        "compliance": 80.2,
+        "best_practices": 74.8,
+        "latency": 2527.12,
+        "documentation": 83.2
+      },
+      "pso_seconds": 0.0,
+      "pso_history": []
+    },
+    {
+      "episode": 1,
+      "seconds": 0.001813650131225586,
+      "initial_fitness": 0.4661998902456208,
+      "final_fitness": 0.4661998902456208,
+      "task_sequence": [
+        "Platinum",
+        "Bronze",
+        "Platinum",
+        "Silver",
+        "Platinum"
+      ],
+      "final_composition": [
+        198,
+        180,
+        91,
+        444,
+        297
+      ],
+      "valid_steps": 5,
+      "success": true,
+      "normalized_qos": {
+        "response_time": 0.5193178628901179,
+        "availability": 0.37958934021505375,
+        "throughput": 0.016279069767441864,
+        "successability": 0.4396469469565217,
+        "reliability": 0.0,
+        "compliance": 0.835820895522388,
+        "best_practices": 0.28888888888888886,
+        "latency": 0.9094047925792322,
+        "documentation": 0.93125
+      },
+      "raw_qos": {
+        "response_time": 2417.66,
+        "availability": 42.30180864,
+        "throughput": 0.8,
+        "successability": 48.447519119999995,
+        "reliability": 17.564559200000005,
+        "compliance": 89.0,
+        "best_practices": 63.0,
+        "latency": 351.84999999999997,
+        "documentation": 90.4
+      },
+      "pso_seconds": 0.0,
+      "pso_history": []
+    },
+    {
+      "episode": 2,
+      "seconds": 0.0018150806427001953,
+      "initial_fitness": 0.5022675947194806,
+      "final_fitness": 0.5022675947194806,
+      "task_sequence": [
+        "Silver",
+        "Gold",
+        "Platinum",
+        "Platinum",
+        "Silver"
+      ],
+      "final_composition": [
+        369,
+        259,
+        91,
+        198,
+        35
+      ],
+      "valid_steps": 5,
+      "success": true,
+      "normalized_qos": {
+        "response_time": 0.17995949659476618,
+        "availability": 0.6879081427956989,
+        "throughput": 0.044186046511627906,
+        "successability": 0.8345995484782608,
+        "reliability": 0.0,
+        "compliance": 0.737313432835821,
+        "best_practices": 0.4044444444444445,
+        "latency": 0.878028858541613,
+        "documentation": 0.9541666666666666
+      },
+      "raw_qos": {
+        "response_time": 4098.389999999999,
+        "availability": 70.97545728,
+        "throughput": 2.0,
+        "successability": 84.78315846,
+        "reliability": 20.8513112,
+        "compliance": 82.4,
+        "best_practices": 68.2,
+        "latency": 473.62,
+        "documentation": 92.6
+      },
+      "pso_seconds": 0.0,
+      "pso_history": []
+    },
+    {
+      "episode": 3,
+      "seconds": 0.001766204833984375,
+      "initial_fitness": 0.5131993939092677,
+      "final_fitness": 0.5131993939092677,
+      "task_sequence": [
+        "Platinum",
+        "Bronze",
+        "Platinum",
+        "Gold",
+        "Platinum"
+      ],
+      "final_composition": [
+        91,
+        180,
+        198,
+        202,
+        297
+      ],
+      "valid_steps": 5,
+      "success": true,
+      "normalized_qos": {
+        "response_time": 0.85925571459435,
+        "availability": 0.35614304344086023,
+        "throughput": 0.016279069767441864,
+        "successability": 0.43427344217391295,
+        "reliability": 0.0,
+        "compliance": 0.835820895522388,
+        "best_practices": 0.2711111111111112,
+        "latency": 0.9074181911878382,
+        "documentation": 0.94375
+      },
+      "raw_qos": {
+        "response_time": 734.0600000000001,
+        "availability": 40.12130304,
+        "throughput": 0.8,
+        "successability": 47.95315667999999,
+        "reliability": 15.729456000000003,
+        "compliance": 89.0,
+        "best_practices": 62.2,
+        "latency": 359.56,
+        "documentation": 91.6
+      },
+      "pso_seconds": 0.0,
+      "pso_history": []
+    },
+    {
+      "episode": 4,
+      "seconds": 0.0017588138580322266,
+      "initial_fitness": 0.5339462418476735,
+      "final_fitness": 0.5339462418476735,
+      "task_sequence": [
+        "Platinum",
+        "Gold",
+        "Platinum",
+        "Gold",
+        "Silver"
+      ],
+      "final_composition": [
+        91,
+        259,
+        198,
+        381,
+        35
+      ],
+      "valid_steps": 5,
+      "success": true,
+      "normalized_qos": {
+        "response_time": 0.26784744390399523,
+        "availability": 0.696294702795699,
+        "throughput": 0.044186046511627906,
+        "successability": 0.895361487173913,
+        "reliability": 0.0,
+        "compliance": 0.737313432835821,
+        "best_practices": 0.4044444444444445,
+        "latency": 0.9552151507343468,
+        "documentation": 0.9500000000000001
+      },
+      "raw_qos": {
+        "response_time": 3663.11,
+        "availability": 71.75540736,
+        "throughput": 2.0,
+        "successability": 90.37325682,
+        "reliability": 20.851311200000005,
+        "compliance": 82.4,
+        "best_practices": 68.2,
+        "latency": 174.06,
+        "documentation": 92.2
+      },
+      "pso_seconds": 0.0,
+      "pso_history": []
+    },
+    {
+      "episode": 5,
+      "seconds": 0.05007028579711914,
+      "initial_fitness": 0.39101219707885804,
+      "final_fitness": 0.39101219707885804,
+      "task_sequence": [
+        "Silver",
+        "Gold",
+        "Bronze",
+        "Gold",
+        "Silver"
+      ],
+      "final_composition": [
+        369,
+        259,
+        180,
+        399,
+        35
+      ],
+      "valid_steps": 5,
+      "success": true,
+      "normalized_qos": {
+        "response_time": 0.1447703965739692,
+        "availability": 0.31994782279569894,
+        "throughput": 0.016279069767441864,
+        "successability": 0.38711272608695657,
+        "reliability": 0.0,
+        "compliance": 0.7044776119402986,
+        "best_practices": 0.5022222222222221,
+        "latency": 0.8653130636433908,
+        "documentation": 0.9083333333333333
+      },
+      "raw_qos": {
+        "response_time": 4272.67,
+        "availability": 36.75514752,
+        "throughput": 0.8,
+        "successability": 43.6143708,
+        "reliability": 16.027660270000002,
+        "compliance": 80.2,
+        "best_practices": 72.6,
+        "latency": 522.97,
+        "documentation": 88.2
+      },
+      "pso_seconds": 0.0,
+      "pso_history": []
+    },
+    {
+      "episode": 6,
+      "seconds": 0.0019330978393554688,
+      "initial_fitness": 0.4171831136426217,
+      "final_fitness": 0.4171831136426217,
+      "task_sequence": [
+        "Gold",
+        "Silver",
+        "Platinum",
+        "Bronze",
+        "Gold"
+      ],
+      "final_composition": [
+        259,
+        35,
+        91,
+        180,
+        399
+      ],
+      "valid_steps": 5,
+      "success": true,
+      "normalized_qos": {
+        "response_time": 0.2232129336297391,
+        "availability": 0.31994782279569894,
+        "throughput": 0.016279069767441864,
+        "successability": 0.4183700391304347,
+        "reliability": 0.0,
+        "compliance": 0.737313432835821,
+        "best_practices": 0.5022222222222221,
+        "latency": 0.9212264880185519,
+        "documentation": 0.9208333333333334
+      },
+      "raw_qos": {
+        "response_time": 3884.17,
+        "availability": 36.75514752,
+        "throughput": 0.8,
+        "successability": 46.49004359999999,
+        "reliability": 16.027660270000002,
+        "compliance": 82.4,
+        "best_practices": 72.6,
+        "latency": 305.97,
+        "documentation": 89.4
+      },
+      "pso_seconds": 0.0,
+      "pso_history": []
+    },
+    {
+      "episode": 7,
+      "seconds": 0.0018451213836669922,
+      "initial_fitness": 0.42763821741981756,
+      "final_fitness": 0.42763821741981756,
+      "task_sequence": [
+        "Platinum",
+        "Silver",
+        "Gold",
+        "Platinum",
+        "Bronze"
+      ],
+      "final_composition": [
+        198,
+        35,
+        259,
+        91,
+        180
+      ],
+      "valid_steps": 5,
+      "success": true,
+      "normalized_qos": {
+        "response_time": 0.23669656972905528,
+        "availability": 0.36083230279569894,
+        "throughput": 0.016279069767441864,
+        "successability": 0.4396469469565217,
+        "reliability": 0.0,
+        "compliance": 0.7701492537313432,
+        "best_practices": 0.44888888888888895,
+        "latency": 0.9180958515846431,
+        "documentation": 0.9375
+      },
+      "raw_qos": {
+        "response_time": 3817.39,
+        "availability": 40.557404160000004,
+        "throughput": 0.8,
+        "successability": 48.447519119999995,
+        "reliability": 19.137504800000002,
+        "compliance": 84.6,
+        "best_practices": 70.2,
+        "latency": 318.12,
+        "documentation": 91.0
+      },
+      "pso_seconds": 0.0,
+      "pso_history": []
+    },
+    {
+      "episode": 8,
+      "seconds": 0.0018420219421386719,
+      "initial_fitness": 0.43743710784023576,
+      "final_fitness": 0.43743710784023576,
+      "task_sequence": [
+        "Bronze",
+        "Platinum",
+        "Platinum",
+        "Silver",
+        "Platinum"
+      ],
+      "final_composition": [
+        180,
+        198,
+        91,
+        35,
+        297
+      ],
+      "valid_steps": 5,
+      "success": true,
+      "normalized_qos": {
+        "response_time": 0.3091120547098838,
+        "availability": 0.3749000808602151,
+        "throughput": 0.016279069767441864,
+        "successability": 0.4450204517391304,
+        "reliability": 0.0,
+        "compliance": 0.8029850746268656,
+        "best_practices": 0.36444444444444457,
+        "latency": 0.9119479515588765,
+        "documentation": 0.9354166666666667
+      },
+      "raw_qos": {
+        "response_time": 3458.74,
+        "availability": 41.86570752,
+        "throughput": 0.8,
+        "successability": 48.94188156,
+        "reliability": 19.137504800000002,
+        "compliance": 86.8,
+        "best_practices": 66.4,
+        "latency": 341.97999999999996,
+        "documentation": 90.8
+      },
+      "pso_seconds": 0.0,
+      "pso_history": []
+    },
+    {
+      "episode": 9,
+      "seconds": 0.003191232681274414,
+      "initial_fitness": 0.2937376505196916,
+      "final_fitness": 0.2937376505196916,
+      "task_sequence": [
+        "Silver",
+        "Platinum",
+        "Gold",
+        "Bronze",
+        "Bronze"
+      ],
+      "final_composition": [
+        35,
+        91,
+        259,
+        180,
+        385
+      ],
+      "valid_steps": 5,
+      "success": true,
+      "normalized_qos": {
+        "response_time": 0.0,
+        "availability": 0.30177694279569894,
+        "throughput": 0.004651162790697674,
+        "successability": 0.3598585426086956,
+        "reliability": 0.0,
+        "compliance": 0.737313432835821,
+        "best_practices": 0.551111111111111,
+        "latency": 0.40482607575367174,
+        "documentation": 0.86875
+      },
+      "raw_qos": {
+        "response_time": 6248.0599999999995,
+        "availability": 35.06525568,
+        "throughput": 0.3,
+        "successability": 41.10698591999999,
+        "reliability": 17.46297313,
+        "compliance": 82.4,
+        "best_practices": 74.8,
+        "latency": 2310.12,
+        "documentation": 84.4
+      },
+      "pso_seconds": 0.0,
+      "pso_history": []
+    },
+    {
+      "episode": 10,
+      "seconds": 0.002023458480834961,
+      "initial_fitness": 0.39081500877733294,
+      "final_fitness": 0.39081500877733294,
+      "task_sequence": [
+        "Gold",
+        "Silver",
+        "Silver",
+        "Gold",
+        "Bronze"
+      ],
+      "final_composition": [
+        259,
+        35,
+        444,
+        381,
+        180
+      ],
+      "valid_steps": 5,
+      "success": true,
+      "normalized_qos": {
+        "response_time": 0.0,
+        "availability": 0.37021726279569894,
+        "throughput": 0.016279069767441864,
+        "successability": 0.4343277199999999,
+        "reliability": 0.0,
+        "compliance": 0.737313432835821,
+        "best_practices": 0.4177777777777777,
+        "latency": 0.9456145323370265,
+        "documentation": 0.90625
+      },
+      "raw_qos": {
+        "response_time": 5406.76,
+        "availability": 41.43020544,
+        "throughput": 0.8,
+        "successability": 47.958150239999995,
+        "reliability": 16.027660270000002,
+        "compliance": 82.4,
+        "best_practices": 68.8,
+        "latency": 211.32,
+        "documentation": 88.0
+      },
+      "pso_seconds": 0.0,
+      "pso_history": []
+    },
+    {
+      "episode": 11,
+      "seconds": 0.0018877983093261719,
+      "initial_fitness": 0.3821581992230005,
+      "final_fitness": 0.3821581992230005,
+      "task_sequence": [
+        "Bronze",
+        "Gold",
+        "Silver",
+        "Platinum",
+        "Platinum"
+      ],
+      "final_composition": [
+        385,
+        381,
+        35,
+        198,
+        91
+      ],
+      "valid_steps": 5,
+      "success": true,
+      "normalized_qos": {
+        "response_time": 0.0,
+        "availability": 0.6133308834408601,
+        "throughput": 0.004651162790697674,
+        "successability": 0.755030343043478,
+        "reliability": 0.0,
+        "compliance": 0.737313432835821,
+        "best_practices": 0.4533333333333335,
+        "latency": 0.43105385209997427,
+        "documentation": 0.9
+      },
+      "raw_qos": {
+        "response_time": 5780.11,
+        "availability": 64.03977215999998,
+        "throughput": 0.3,
+        "successability": 77.46279155999999,
+        "reliability": 22.7185928,
+        "compliance": 82.4,
+        "best_practices": 70.4,
+        "latency": 2208.33,
+        "documentation": 87.4
+      },
+      "pso_seconds": 0.0,
+      "pso_history": []
+    },
+    {
+      "episode": 12,
+      "seconds": 0.0018324851989746094,
+      "initial_fitness": 0.46289929288108833,
+      "final_fitness": 0.46289929288108833,
+      "task_sequence": [
+        "Silver",
+        "Silver",
+        "Gold",
+        "Silver",
+        "Silver"
+      ],
+      "final_composition": [
+        369,
+        35,
+        259,
+        444,
+        339
+      ],
+      "valid_steps": 5,
+      "success": true,
+      "normalized_qos": {
+        "response_time": 0.0,
+        "availability": 0.704331822795699,
+        "throughput": 0.044186046511627906,
+        "successability": 0.7876724508695653,
+        "reliability": 0.0,
+        "compliance": 0.737313432835821,
+        "best_practices": 0.35555555555555557,
+        "latency": 0.8503014686936357,
+        "documentation": 0.9187500000000001
+      },
+      "raw_qos": {
+        "response_time": 6062.25,
+        "availability": 72.50285952,
+        "throughput": 2.0,
+        "successability": 80.46586548,
+        "reliability": 16.027660270000002,
+        "compliance": 82.4,
+        "best_practices": 66.0,
+        "latency": 581.23,
+        "documentation": 89.2
+      },
+      "pso_seconds": 0.0,
+      "pso_history": []
+    },
+    {
+      "episode": 13,
+      "seconds": 0.0017852783203125,
+      "initial_fitness": 0.39806803330423113,
+      "final_fitness": 0.39806803330423113,
+      "task_sequence": [
+        "Platinum",
+        "Gold",
+        "Silver",
+        "Silver",
+        "Bronze"
+      ],
+      "final_composition": [
+        198,
+        259,
+        35,
+        444,
+        180
+      ],
+      "valid_steps": 5,
+      "success": true,
+      "normalized_qos": {
+        "response_time": 0.0,
+        "availability": 0.3895862227956989,
+        "throughput": 0.016279069767441864,
+        "successability": 0.4450758486956522,
+        "reliability": 0.0,
+        "compliance": 0.7701492537313432,
+        "best_practices": 0.4311111111111112,
+        "latency": 0.9395439319762947,
+        "documentation": 0.9249999999999999
+      },
+      "raw_qos": {
+        "response_time": 5404.87,
+        "availability": 43.23151872,
+        "throughput": 0.8,
+        "successability": 48.94697808,
+        "reliability": 17.564559200000005,
+        "compliance": 84.6,
+        "best_practices": 69.4,
+        "latency": 234.88,
+        "documentation": 89.8
+      },
+      "pso_seconds": 0.0,
+      "pso_history": []
+    },
+    {
+      "episode": 14,
+      "seconds": 0.0017952919006347656,
+      "initial_fitness": 0.5690242030577288,
+      "final_fitness": 0.5690242030577288,
+      "task_sequence": [
+        "Gold",
+        "Gold",
+        "Gold",
+        "Silver",
+        "Platinum"
+      ],
+      "final_composition": [
+        202,
+        381,
+        259,
+        444,
+        198
+      ],
+      "valid_steps": 5,
+      "success": true,
+      "normalized_qos": {
+        "response_time": 0.49746096549941754,
+        "availability": 0.712898862795699,
+        "throughput": 0.053488372093023255,
+        "successability": 0.8854390830434781,
+        "reliability": 0.0,
+        "compliance": 0.7701492537313432,
+        "best_practices": 0.2933333333333334,
+        "latency": 0.97213347075496,
+        "documentation": 0.9458333333333333
+      },
+      "raw_qos": {
+        "response_time": 2525.91,
+        "availability": 73.29959424,
+        "throughput": 2.4,
+        "successability": 89.46039563999999,
+        "reliability": 15.729456000000003,
+        "compliance": 84.6,
+        "best_practices": 63.2,
+        "latency": 108.39999999999999,
+        "documentation": 91.8
+      },
+      "pso_seconds": 0.0,
+      "pso_history": []
+    },
+    {
+      "episode": 15,
+      "seconds": 0.0017652511596679688,
+      "initial_fitness": 0.3358525129152607,
+      "final_fitness": 0.3358525129152607,
+      "task_sequence": [
+        "Platinum",
+        "Bronze",
+        "Bronze",
+        "Gold",
+        "Platinum"
+      ],
+      "final_composition": [
+        91,
+        180,
+        385,
+        259,
+        198
+      ],
+      "valid_steps": 5,
+      "success": true,
+      "normalized_qos": {
+        "response_time": 0.2864798179567789,
+        "availability": 0.30177694279569894,
+        "throughput": 0.004651162790697674,
+        "successability": 0.3598585426086956,
+        "reliability": 0.0,
+        "compliance": 0.7701492537313432,
+        "best_practices": 0.5066666666666666,
+        "latency": 0.3960371038392167,
+        "documentation": 0.8791666666666668
+      },
+      "raw_qos": {
+        "response_time": 3570.83,
+        "availability": 35.06525568,
+        "throughput": 0.3,
+        "successability": 41.10698591999999,
+        "reliability": 19.137504800000002,
+        "compliance": 84.6,
+        "best_practices": 72.8,
+        "latency": 2344.23,
+        "documentation": 85.4
+      },
+      "pso_seconds": 0.0,
+      "pso_history": []
+    },
+    {
+      "episode": 16,
+      "seconds": 0.001783609390258789,
+      "initial_fitness": 0.3732949988337015,
+      "final_fitness": 0.3732949988337015,
+      "task_sequence": [
+        "Bronze",
+        "Silver",
+        "Silver",
+        "Platinum",
+        "Silver"
+      ],
+      "final_composition": [
+        385,
+        35,
+        444,
+        198,
+        369
+      ],
+      "valid_steps": 5,
+      "success": true,
+      "normalized_qos": {
+        "response_time": 0.0,
+        "availability": 0.6507547802150537,
+        "throughput": 0.004651162790697674,
+        "successability": 0.7110920339130434,
+        "reliability": 0.0,
+        "compliance": 0.737313432835821,
+        "best_practices": 0.4355555555555554,
+        "latency": 0.37531564029889203,
+        "documentation": 0.8916666666666666
+      },
+      "raw_qos": {
+        "response_time": 7802.869999999999,
+        "availability": 67.52019456,
+        "throughput": 0.3,
+        "successability": 73.42046712,
+        "reliability": 20.8513112,
+        "compliance": 82.4,
+        "best_practices": 69.6,
+        "latency": 2424.65,
+        "documentation": 86.6
+      },
+      "pso_seconds": 0.0,
+      "pso_history": []
+    },
+    {
+      "episode": 17,
+      "seconds": 0.0017440319061279297,
+      "initial_fitness": 0.4171831136426217,
+      "final_fitness": 0.4171831136426217,
+      "task_sequence": [
+        "Gold",
+        "Bronze",
+        "Silver",
+        "Platinum",
+        "Gold"
+      ],
+      "final_composition": [
+        259,
+        180,
+        35,
+        91,
+        399
+      ],
+      "valid_steps": 5,
+      "success": true,
+      "normalized_qos": {
+        "response_time": 0.2232129336297391,
+        "availability": 0.31994782279569894,
+        "throughput": 0.016279069767441864,
+        "successability": 0.4183700391304348,
+        "reliability": 0.0,
+        "compliance": 0.737313432835821,
+        "best_practices": 0.5022222222222221,
+        "latency": 0.9212264880185519,
+        "documentation": 0.9208333333333334
+      },
+      "raw_qos": {
+        "response_time": 3884.17,
+        "availability": 36.75514752,
+        "throughput": 0.8,
+        "successability": 46.4900436,
+        "reliability": 16.027660270000005,
+        "compliance": 82.4,
+        "best_practices": 72.6,
+        "latency": 305.97,
+        "documentation": 89.4
+      },
+      "pso_seconds": 0.0,
+      "pso_history": []
+    },
+    {
+      "episode": 18,
+      "seconds": 0.0018086433410644531,
+      "initial_fitness": 0.46289929288108833,
+      "final_fitness": 0.46289929288108833,
+      "task_sequence": [
+        "Gold",
+        "Silver",
+        "Silver",
+        "Silver",
+        "Silver"
+      ],
+      "final_composition": [
+        259,
+        35,
+        444,
+        369,
+        339
+      ],
+      "valid_steps": 5,
+      "success": true,
+      "normalized_qos": {
+        "response_time": 0.0,
+        "availability": 0.704331822795699,
+        "throughput": 0.044186046511627906,
+        "successability": 0.7876724508695653,
+        "reliability": 0.0,
+        "compliance": 0.737313432835821,
+        "best_practices": 0.35555555555555557,
+        "latency": 0.8503014686936357,
+        "documentation": 0.9187500000000001
+      },
+      "raw_qos": {
+        "response_time": 6062.25,
+        "availability": 72.50285952,
+        "throughput": 2.0,
+        "successability": 80.46586548,
+        "reliability": 16.027660270000002,
+        "compliance": 82.4,
+        "best_practices": 66.0,
+        "latency": 581.23,
+        "documentation": 89.2
+      },
+      "pso_seconds": 0.0,
+      "pso_history": []
+    },
+    {
+      "episode": 19,
+      "seconds": 0.0018625259399414062,
+      "initial_fitness": 0.3009217788121308,
+      "final_fitness": 0.3009217788121308,
+      "task_sequence": [
+        "Bronze",
+        "Gold",
+        "Platinum",
+        "Silver",
+        "Bronze"
+      ],
+      "final_composition": [
+        385,
+        259,
+        198,
+        35,
+        180
+      ],
+      "valid_steps": 5,
+      "success": true,
+      "normalized_qos": {
+        "response_time": 0.0,
+        "availability": 0.3224937427956989,
+        "throughput": 0.004651162790697674,
+        "successability": 0.369071224347826,
+        "reliability": 0.0,
+        "compliance": 0.737313432835821,
+        "best_practices": 0.5644444444444445,
+        "latency": 0.4200283432105128,
+        "documentation": 0.8708333333333332
+      },
+      "raw_qos": {
+        "response_time": 6199.389999999999,
+        "availability": 36.99191808,
+        "throughput": 0.3,
+        "successability": 41.954552639999996,
+        "reliability": 19.137504800000006,
+        "compliance": 82.4,
+        "best_practices": 75.4,
+        "latency": 2251.12,
+        "documentation": 84.6
+      },
+      "pso_seconds": 0.0,
+      "pso_history": []
+    },
+    {
+      "episode": 20,
+      "seconds": 0.0018227100372314453,
+      "initial_fitness": 0.4107078230871542,
+      "final_fitness": 0.4107078230871542,
+      "task_sequence": [
+        "Bronze",
+        "Gold",
+        "Gold",
+        "Platinum",
+        "Gold"
+      ],
+      "final_composition": [
+        385,
+        259,
+        399,
+        91,
+        381
+      ],
+      "valid_steps": 5,
+      "success": true,
+      "normalized_qos": {
+        "response_time": 0.3041470560324028,
+        "availability": 0.529273302795699,
+        "throughput": 0.004651162790697674,
+        "successability": 0.7128493869565213,
+        "reliability": 0.0,
+        "compliance": 0.7044776119402986,
+        "best_practices": 0.5155555555555557,
+        "latency": 0.43628703942282915,
+        "documentation": 0.875
+      },
+      "raw_qos": {
+        "response_time": 3483.33,
+        "availability": 56.222417160000006,
+        "throughput": 0.3,
+        "successability": 73.58214359999997,
+        "reliability": 17.46297313,
+        "compliance": 80.2,
+        "best_practices": 73.2,
+        "latency": 2188.02,
+        "documentation": 85.0
+      },
+      "pso_seconds": 0.0,
+      "pso_history": []
+    },
+    {
+      "episode": 21,
+      "seconds": 0.0017540454864501953,
+      "initial_fitness": 0.3452842348546129,
+      "final_fitness": 0.3452842348546129,
+      "task_sequence": [
+        "Platinum",
+        "Platinum",
+        "Bronze",
+        "Bronze",
+        "Platinum"
+      ],
+      "final_composition": [
+        91,
+        198,
+        180,
+        385,
+        297
+      ],
+      "valid_steps": 5,
+      "success": true,
+      "normalized_qos": {
+        "response_time": 0.3588953029376074,
+        "availability": 0.31393970924731185,
+        "throughput": 0.004651162790697674,
+        "successability": 0.36441787999999997,
+        "reliability": 0.0,
+        "compliance": 0.8029850746268656,
+        "best_practices": 0.4222222222222222,
+        "latency": 0.3898892038134501,
+        "documentation": 0.8770833333333333
+      },
+      "raw_qos": {
+        "response_time": 3212.18,
+        "availability": 36.196392960000004,
+        "throughput": 0.3,
+        "successability": 41.52644496,
+        "reliability": 19.137504800000002,
+        "compliance": 86.8,
+        "best_practices": 69.0,
+        "latency": 2368.09,
+        "documentation": 85.2
+      },
+      "pso_seconds": 0.0,
+      "pso_history": []
+    },
+    {
+      "episode": 22,
+      "seconds": 0.0017154216766357422,
+      "initial_fitness": 0.41070782308715426,
+      "final_fitness": 0.41070782308715426,
+      "task_sequence": [
+        "Bronze",
+        "Platinum",
+        "Gold",
+        "Gold",
+        "Gold"
+      ],
+      "final_composition": [
+        385,
+        91,
+        259,
+        399,
+        381
+      ],
+      "valid_steps": 5,
+      "success": true,
+      "normalized_qos": {
+        "response_time": 0.3041470560324028,
+        "availability": 0.5292733027956988,
+        "throughput": 0.004651162790697674,
+        "successability": 0.7128493869565217,
+        "reliability": 0.0,
+        "compliance": 0.7044776119402986,
+        "best_practices": 0.5155555555555557,
+        "latency": 0.43628703942282915,
+        "documentation": 0.875
+      },
+      "raw_qos": {
+        "response_time": 3483.33,
+        "availability": 56.22241715999999,
+        "throughput": 0.3,
+        "successability": 73.5821436,
+        "reliability": 17.46297313,
+        "compliance": 80.2,
+        "best_practices": 73.2,
+        "latency": 2188.02,
+        "documentation": 85.0
+      },
+      "pso_seconds": 0.0,
+      "pso_history": []
+    },
+    {
+      "episode": 23,
+      "seconds": 0.001837015151977539,
+      "initial_fitness": 0.42763821741981756,
+      "final_fitness": 0.42763821741981756,
+      "task_sequence": [
+        "Platinum",
+        "Silver",
+        "Platinum",
+        "Bronze",
+        "Gold"
+      ],
+      "final_composition": [
+        91,
+        35,
+        198,
+        180,
+        259
+      ],
+      "valid_steps": 5,
+      "success": true,
+      "normalized_qos": {
+        "response_time": 0.23669656972905528,
+        "availability": 0.36083230279569894,
+        "throughput": 0.016279069767441864,
+        "successability": 0.4396469469565217,
+        "reliability": 0.0,
+        "compliance": 0.7701492537313432,
+        "best_practices": 0.44888888888888895,
+        "latency": 0.9180958515846431,
+        "documentation": 0.9375
+      },
+      "raw_qos": {
+        "response_time": 3817.39,
+        "availability": 40.557404160000004,
+        "throughput": 0.8,
+        "successability": 48.447519119999995,
+        "reliability": 19.137504800000002,
+        "compliance": 84.6,
+        "best_practices": 70.2,
+        "latency": 318.12,
+        "documentation": 91.0
+      },
+      "pso_seconds": 0.0,
+      "pso_history": []
+    },
+    {
+      "episode": 24,
+      "seconds": 0.0017795562744140625,
+      "initial_fitness": 0.2952343951841632,
+      "final_fitness": 0.2952343951841632,
+      "task_sequence": [
+        "Platinum",
+        "Platinum",
+        "Bronze",
+        "Bronze",
+        "Silver"
+      ],
+      "final_composition": [
+        91,
+        198,
+        180,
+        385,
+        35
+      ],
+      "valid_steps": 5,
+      "success": true,
+      "normalized_qos": {
+        "response_time": 0.0,
+        "availability": 0.31393970924731185,
+        "throughput": 0.004651162790697674,
+        "successability": 0.36441787999999997,
+        "reliability": 0.0,
+        "compliance": 0.7701492537313432,
+        "best_practices": 0.49777777777777793,
+        "latency": 0.3939345529502706,
+        "documentation": 0.8875000000000001
+      },
+      "raw_qos": {
+        "response_time": 5934.389999999999,
+        "availability": 36.196392960000004,
+        "throughput": 0.3,
+        "successability": 41.52644496,
+        "reliability": 20.8513112,
+        "compliance": 84.6,
+        "best_practices": 72.4,
+        "latency": 2352.39,
+        "documentation": 86.2
+      },
+      "pso_seconds": 0.0,
+      "pso_history": []
+    }
+  ]
+}

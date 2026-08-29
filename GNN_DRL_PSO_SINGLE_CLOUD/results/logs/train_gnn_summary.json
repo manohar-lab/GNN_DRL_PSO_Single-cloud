@@ -1,0 +1,11 @@
+{
+  "final_loss": 1.192960262298584,
+  "pretrain_seconds": 8.644250631332397,
+  "n_nodes": 2006,
+  "n_edges": 22770,
+  "edge_stats": {
+    "intra_class": 10030,
+    "inter_class": 4512,
+    "total_after_dedup": 22770
+  }
+}

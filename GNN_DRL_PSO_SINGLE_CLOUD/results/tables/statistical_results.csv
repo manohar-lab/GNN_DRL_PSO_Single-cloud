@@ -1,0 +1,2 @@
+name_a,name_b,n_pairs,mean_a,mean_b,mean_diff,rel_diff_pct,wilcoxon_stat,wilcoxon_p,ttest_stat,ttest_p,shapiro_p,cohens_d,ci_low,ci_high,alpha,conclusion
+GNN_DRL_PSO,DRL_PSO,5,0.5927102719130587,0.5911699519721717,0.0015403199408869695,0.260554504799912,7.0,1.0,0.483334800009822,0.6541233790308087,0.8661889713297296,0.2161538937426456,-0.007307819610056341,0.010388459491830279,0.05,insufficient_evidence_of_difference

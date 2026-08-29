@@ -1,0 +1,218 @@
+{
+  "raw_rows": 2507,
+  "n_train": 2006,
+  "n_test": 501,
+  "qos_columns": [
+    "response_time",
+    "availability",
+    "throughput",
+    "successability",
+    "reliability",
+    "compliance",
+    "best_practices",
+    "latency",
+    "documentation"
+  ],
+  "split": {
+    "n_train": 2006,
+    "n_test": 501,
+    "train_ratio": 0.8,
+    "split_seed": 42,
+    "wsrf_quartile_boundaries": [
+      0.6380147779994902,
+      0.6985547734637857,
+      0.7494286207840883
+    ],
+    "class_map": {
+      "1": "Platinum",
+      "2": "Gold",
+      "3": "Silver",
+      "4": "Bronze"
+    },
+    "qos_columns": [
+      "response_time",
+      "availability",
+      "throughput",
+      "successability",
+      "reliability",
+      "compliance",
+      "best_practices",
+      "latency",
+      "documentation"
+    ]
+  },
+  "raw_stats": {
+    "min": {
+      "response_time": 37.0,
+      "availability": 7.0,
+      "throughput": 0.1,
+      "successability": 8.0,
+      "reliability": 33.0,
+      "compliance": 33.0,
+      "best_practices": 50.0,
+      "latency": 0.25,
+      "documentation": 1.0
+    },
+    "max": {
+      "response_time": 4989.67,
+      "availability": 100.0,
+      "throughput": 43.1,
+      "successability": 100.0,
+      "reliability": 89.0,
+      "compliance": 100.0,
+      "best_practices": 95.0,
+      "latency": 4140.35,
+      "documentation": 97.0
+    },
+    "mean": {
+      "response_time": 383.83402473075387,
+      "availability": 81.14559234144396,
+      "throughput": 9.035540486637414,
+      "successability": 83.88711607499003,
+      "reliability": 69.78340646190667,
+      "compliance": 88.43358595931392,
+      "best_practices": 79.30753889110491,
+      "latency": 54.6670043877144,
+      "documentation": 31.320303151176706
+    },
+    "std": {
+      "response_time": 564.3615455897921,
+      "availability": 18.701266636807755,
+      "throughput": 7.730799487203702,
+      "successability": 19.902646676067462,
+      "reliability": 8.575270913071375,
+      "compliance": 10.02657466665361,
+      "best_practices": 7.816834911056976,
+      "latency": 191.70903012057033,
+      "documentation": 31.509406471037586
+    }
+  },
+  "train_stats": {
+    "min": {
+      "response_time": 37.0,
+      "availability": 7.0,
+      "throughput": 0.1,
+      "successability": 8.0,
+      "reliability": 33.0,
+      "compliance": 33.0,
+      "best_practices": 50.0,
+      "latency": 0.25,
+      "documentation": 1.0
+    },
+    "max": {
+      "response_time": 4989.67,
+      "availability": 100.0,
+      "throughput": 43.1,
+      "successability": 100.0,
+      "reliability": 89.0,
+      "compliance": 100.0,
+      "best_practices": 95.0,
+      "latency": 3881.25,
+      "documentation": 97.0
+    },
+    "mean": {
+      "response_time": 383.1552841475573,
+      "availability": 81.46261216350948,
+      "throughput": 9.178315054835492,
+      "successability": 84.23678963110667,
+      "reliability": 69.5677966101695,
+      "compliance": 88.5284147557328,
+      "best_practices": 79.18444666001994,
+      "latency": 53.48388833499502,
+      "documentation": 30.860917248255234
+    },
+    "std": {
+      "response_time": 563.3175706427122,
+      "availability": 18.381882763235335,
+      "throughput": 7.890656955189566,
+      "successability": 19.58747277568667,
+      "reliability": 8.708418252435976,
+      "compliance": 10.026794038113815,
+      "best_practices": 7.873936764254436,
+      "latency": 175.8749528036221,
+      "documentation": 31.41043710390681
+    }
+  },
+  "test_stats": {
+    "min": {
+      "response_time": 38.0,
+      "availability": 9.0,
+      "throughput": 0.3,
+      "successability": 9.0,
+      "reliability": 33.0,
+      "compliance": 50.0,
+      "best_practices": 50.0,
+      "latency": 0.33,
+      "documentation": 1.0
+    },
+    "max": {
+      "response_time": 4637.61,
+      "availability": 100.0,
+      "throughput": 36.9,
+      "successability": 100.0,
+      "reliability": 89.0,
+      "compliance": 100.0,
+      "best_practices": 93.0,
+      "latency": 4140.35,
+      "documentation": 97.0
+    },
+    "mean": {
+      "response_time": 386.5516966067864,
+      "availability": 79.87624750499002,
+      "throughput": 8.46387225548902,
+      "successability": 82.48702594810379,
+      "reliability": 70.64670658682634,
+      "compliance": 88.05389221556887,
+      "best_practices": 79.8003992015968,
+      "latency": 59.40419161676647,
+      "documentation": 33.159680638722556
+    },
+    "std": {
+      "response_time": 569.080452066064,
+      "availability": 19.897553987629202,
+      "throughput": 7.032904959947113,
+      "successability": 21.07990349449744,
+      "reliability": 7.970002141262983,
+      "compliance": 10.02671879631414,
+      "best_practices": 7.5715308782517265,
+      "latency": 245.22922259468837,
+      "documentation": 31.867890596928508
+    }
+  },
+  "class_distribution": {
+    "train": {
+      "1": 502,
+      "2": 501,
+      "3": 501,
+      "4": 502
+    },
+    "test": {
+      "1": 123,
+      "2": 131,
+      "3": 114,
+      "4": 133
+    }
+  },
+  "normalizer_q_min": {
+    "response_time": 37.0,
+    "availability": 7.0,
+    "throughput": 0.1,
+    "successability": 8.0,
+    "reliability": 33.0,
+    "compliance": 33.0,
+    "best_practices": 50.0,
+    "latency": 0.25,
+    "documentation": 1.0
+  },
+  "normalizer_q_max": {
+    "response_time": 4989.67,
+    "availability": 100.0,
+    "throughput": 43.1,
+    "successability": 100.0,
+    "reliability": 89.0,
+    "compliance": 100.0,
+    "best_practices": 95.0,
+    "latency": 3881.25,
+    "documentation": 97.0
+  }
+}

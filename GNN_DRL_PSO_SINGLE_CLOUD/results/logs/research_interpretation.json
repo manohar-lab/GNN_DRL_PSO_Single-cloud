@@ -1,0 +1,20 @@
+{
+  "timestamp": "2026-08-29 20:59:06",
+  "config_names": [
+    "DRL",
+    "GNN_DRL",
+    "DRL_PSO",
+    "GNN_DRL_PSO"
+  ],
+  "seeds": [
+    42,
+    123,
+    2024,
+    7,
+    999
+  ],
+  "interpretation": {
+    "tag": "insufficient_evidence",
+    "text": "There is insufficient statistical evidence that GNN-based representations change QoS relative to the DRL-PSO baseline in the tested regime.\n    GNN_DRL_PSO : mean=0.5927 std=0.0090\n    DRL_PSO     : mean=0.5912 std=0.0072\n    \u0394 mean = +0.0015  (+0.26%)\n    Paired evaluation across 5 seeds gave a mean difference of +0.0015 (+0.26%). Wilcoxon p-value = 1.0000. Cohen's d = 0.216. GNN produced a small non-significant improvement \u2014 this may reflect improved convergence or generalization that a larger training budget or more seeds could confirm. GNN adds an average of -0.0024s of DRL inference per episode (0.0145s vs 0.0169s). Note: p > 0.05 does NOT prove the methods are equivalent \u2014 it means the current experimental budget does not provide sufficient evidence of a statistically significant difference."
+  }
+}

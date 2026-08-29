@@ -1,0 +1,163 @@
+# =====================================================================
+# GNN-DRL-PSO for QoS-Aware Single-Cloud Service Composition
+# Master configuration file
+# =====================================================================
+# All experiment parameters live here. Any parameter change must be
+# recorded in results/logs/ automatically when an experiment runs.
+# =====================================================================
+
+experiment:
+  name: "gnn_drl_pso_single_cloud"
+  device: "auto"                # auto | cpu | cuda
+  seeds: [42, 123, 2024, 7, 999]
+  num_episodes: 50              # per seed, per configuration
+  save_checkpoints_every: 25
+  results_root: "results"
+  models_root: "models"
+  checkpoints_root: "checkpoints"
+
+# ---------------------------------------------------------------------
+# Dataset
+# ---------------------------------------------------------------------
+dataset:
+  raw_path: "data/raw/QWS2.txt"
+  train_path: "data/train/train.csv"
+  test_path: "data/test/test.csv"
+  processed_dir: "data/processed"
+  train_test_split: 0.8         # 80% train / 20% test
+  split_seed: 42                # deterministic split seed (fixed once)
+  qos_columns:                  # 9 QoS attributes in QWS v2 (order matters)
+    - "response_time"
+    - "availability"
+    - "throughput"
+    - "successability"
+    - "reliability"
+    - "compliance"
+    - "best_practices"
+    - "latency"
+    - "documentation"
+  id_columns:
+    - "service_name"
+    - "wsdl_address"
+  # Direction: 'max' = higher is better, 'min' = lower is better
+  qos_direction:
+    response_time: "min"
+    availability: "max"
+    throughput: "max"
+    successability: "max"
+    reliability: "max"
+    compliance: "max"
+    best_practices: "max"
+    latency: "min"
+    documentation: "max"
+
+# ---------------------------------------------------------------------
+# QoS Fitness (weighted normalized aggregation)
+# ---------------------------------------------------------------------
+qos:
+  # Weights must sum to 1.0 (checked at runtime)
+  weights:
+    response_time: 0.15
+    availability: 0.15
+    throughput: 0.10
+    successability: 0.10
+    reliability: 0.15
+    compliance: 0.05
+    best_practices: 0.05
+    latency: 0.15
+    documentation: 0.10
+  invalid_penalty: 0.0          # fitness returned for invalid composition
+
+# ---------------------------------------------------------------------
+# Service Classification derivation (transparent, deterministic)
+# Since QWS v2 does NOT include the Service Classification column
+# (only v1 did), we derive it using the published WsRF formulation
+# then bucket services into quartiles: Platinum / Gold / Silver / Bronze.
+# ---------------------------------------------------------------------
+service_classification:
+  method: "wsrf_quartile"       # 'wsrf_quartile' | 'custom'
+  buckets: ["Platinum", "Gold", "Silver", "Bronze"]
+
+# ---------------------------------------------------------------------
+# Workflow definition (abstract task sequence used for composition)
+# Each workflow is a sequence of "abstract task tags" (classifications).
+# For each task the agent picks ONE candidate service whose
+# classification matches the abstract task.
+# ---------------------------------------------------------------------
+workflow:
+  # A random workflow of length `length` is sampled at each episode
+  # from `task_pool` using the episode seed (reproducible).
+  length: 5
+  task_pool: ["Platinum", "Gold", "Silver", "Bronze"]
+  allow_duplicate_services: false
+
+# ---------------------------------------------------------------------
+# Service Dependency Graph
+# ---------------------------------------------------------------------
+graph:
+  intra_class_knn: 5            # kNN within same classification (QoS similarity)
+  inter_class_knn: 3            # kNN across adjacent classifications
+  bidirectional: true
+
+# ---------------------------------------------------------------------
+# GNN Encoder
+# ---------------------------------------------------------------------
+gnn:
+  type: "graphsage"             # 'graphsage' | 'gcn'
+  hidden_dim: 64
+  embedding_dim: 32
+  num_layers: 2
+  dropout: 0.1
+  learning_rate: 0.001
+  # Training mode: 'frozen' = train once with graph autoencoder then freeze;
+  #                'joint'  = trained jointly with PPO (gradients flow through).
+  training_mode: "frozen"
+  pretrain_epochs: 30
+
+# ---------------------------------------------------------------------
+# PPO Agent
+# ---------------------------------------------------------------------
+ppo:
+  hidden_dim: 128
+  learning_rate: 0.0003
+  gamma: 0.99
+  gae_lambda: 0.95
+  clip_range: 0.2
+  value_coef: 0.5
+  entropy_coef: 0.01
+  update_epochs: 4
+  batch_size: 64
+  max_grad_norm: 0.5
+  # Number of episodes gathered into a rollout before a PPO update
+  rollout_size: 4
+
+# ---------------------------------------------------------------------
+# Discrete PSO
+# ---------------------------------------------------------------------
+pso:
+  num_particles: 20
+  num_iterations: 15
+  w: 0.7                        # inertia weight
+  c1: 1.5                       # cognitive coefficient
+  c2: 1.5                       # social coefficient
+  init_perturb: 0.4             # fraction of tasks initially perturbed
+  # After each iteration a particle position is 'clipped' back to the
+  # set of services whose classification matches the abstract task.
+
+# ---------------------------------------------------------------------
+# Convergence criterion (episode index of first time best fitness stays
+# within `threshold` for `window` consecutive episodes)
+# ---------------------------------------------------------------------
+convergence:
+  threshold: 0.005
+  window: 5
+
+# ---------------------------------------------------------------------
+# Ablation configurations
+# ---------------------------------------------------------------------
+ablation:
+  configurations:
+    - "DRL"                # DRL only, no PSO refinement, no GNN
+    - "GNN_DRL"            # GNN + DRL, no PSO
+    - "DRL_PSO"            # DRL + PSO (baseline)
+    - "GNN_DRL_PSO"        # proposed

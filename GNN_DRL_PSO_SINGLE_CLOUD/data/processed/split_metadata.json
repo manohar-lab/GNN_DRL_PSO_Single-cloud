@@ -1,0 +1,28 @@
+{
+  "n_train": 2006,
+  "n_test": 501,
+  "train_ratio": 0.8,
+  "split_seed": 42,
+  "wsrf_quartile_boundaries": [
+    0.6380147779994902,
+    0.6985547734637857,
+    0.7494286207840883
+  ],
+  "class_map": {
+    "1": "Platinum",
+    "2": "Gold",
+    "3": "Silver",
+    "4": "Bronze"
+  },
+  "qos_columns": [
+    "response_time",
+    "availability",
+    "throughput",
+    "successability",
+    "reliability",
+    "compliance",
+    "best_practices",
+    "latency",
+    "documentation"
+  ]
+}

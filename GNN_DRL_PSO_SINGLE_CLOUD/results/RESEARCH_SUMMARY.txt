@@ -1,0 +1,136 @@
+Final Research Summary — GNN-DRL-PSO for QoS-Aware Single-Cloud Service Composition
+==================================================================================
+Generated: 2026-02-XX (rerun with `python main.py --stage report` to refresh)
+
+Research question
+-----------------
+"Does incorporating GNN-based service-dependency representations into a
+DRL-PSO pipeline improve QoS-aware service composition in a
+single-cloud environment?"
+
+Experimental setup
+------------------
+* Dataset      : QWS Dataset v2.0 — 2,505 real web services × 9 QoS
+                 attributes (2 rows dropped because their WSDL URL
+                 contained an embedded comma).
+* Split        : deterministic 80/20 by service (seed=42).
+                   Train: 2,006 services      Test: 501 services.
+* QoS fitness  : normalized weighted aggregation (weights sum to 1.0);
+                 per-attribute aggregation rules for a sequential
+                 workflow — SUM for latency/response_time, PRODUCT for
+                 reliability/availability/successability, MIN for
+                 throughput, MEAN for compliance/best_practices/
+                 documentation.
+* Workflows    : length 5 abstract tasks; task tag = derived Service
+                 Classification (Platinum/Gold/Silver/Bronze), obtained
+                 from the published WsRF quartile rule fitted on the
+                 training partition only.
+* GNN          : 2-layer GraphSAGE, hidden=64, embed=32; pretrained
+                 with a graph-autoencoder objective (30 epochs) on the
+                 training graph.
+* PPO          : lr=3e-4, γ=0.99, GAE(λ)=0.95, clip=0.2, entropy=0.01,
+                 hidden=128, rollout_size=4, 4 update epochs, batch=64.
+* PSO          : 20 particles × 15 iterations; w=0.7, c1=c2=1.5;
+                 discrete swap-probability velocity; every particle is
+                 constrained to a syntactically valid composition.
+* Budget       : 4 configurations × 5 seeds × 50 training episodes.
+
+Baseline vs Proposed
+--------------------
+Baseline    : DRL_PSO      — no graph structure; service embeddings
+                             are a fixed random-orthogonal projection
+                             of raw features into R^32.
+Proposed    : GNN_DRL_PSO  — service embeddings come from a
+                             pretrained GraphSAGE encoder over the
+                             service dependency graph (intra-class kNN
+                             + inter-class kNN on QoS similarity).
+
+Fairness controls
+-----------------
+Both configurations share identical seeds, dataset split, normalizer,
+QoS weights, workflow generator, PPO/PSO hyperparameters, state MLP
+architecture, and evaluation protocol. The only differences are
+(a) presence of graph-derived service embeddings, and
+(b) presence of PSO refinement in the specific ablation cell.
+
+Results (test partition, mean ± std across 5 seeds)
+---------------------------------------------------
+    DRL              : 0.5414 ± 0.0152
+    GNN_DRL          : 0.4991 ± 0.0527
+    DRL_PSO          : 0.5912 ± 0.0072      (baseline)
+    GNN_DRL_PSO      : 0.5927 ± 0.0090      (proposed)
+
+Paired comparison (proposed vs baseline)
+----------------------------------------
+    Δ mean            : +0.0015    (+0.26 %)
+    Wilcoxon p-value  : 1.0000
+    Paired t p-value  : 0.6541
+    Shapiro-Wilk p    : 0.8662     (differences plausibly normal)
+    Cohen's d         : 0.216      (small effect)
+    95 % CI on Δ      : [-0.0073 , +0.0104]
+    Conclusion (α=0.05): insufficient evidence of a statistically
+                         significant difference between GNN_DRL_PSO
+                         and DRL_PSO.
+
+Computational overhead
+----------------------
+DRL inference / episode        DRL_PSO : 0.0169 s   GNN_DRL_PSO : 0.0145 s
+PSO / episode                  DRL_PSO : 0.0372 s   GNN_DRL_PSO : 0.0368 s
+Mean total per seed            DRL_PSO : 12.6 s     GNN_DRL_PSO : 19.0 s
+(Additional 19-vs-13 s per seed comes from 30 GNN-autoencoder pretrain
+epochs; runtime PPO inference is essentially unchanged.)
+
+Ablation findings
+-----------------
+* PSO is the largest single contributor: adding PSO to DRL improves
+  mean QoS by +9.2 percentage-points (0.541 -> 0.591).
+* GNN alone (GNN_DRL) actually underperformed DRL alone (0.499 vs
+  0.541) on this dataset in this training budget. One plausible
+  explanation: the graph autoencoder objective does not directly
+  optimise for composition quality, so its embeddings are informative
+  about neighbourhood structure but not necessarily about the
+  composition reward.  PSO can absorb this because it re-optimises
+  the composition regardless of initial choices.
+* When PSO is present the GNN change becomes marginal (+0.0015).
+
+Research interpretation (auto-generated)
+----------------------------------------
+There is insufficient statistical evidence that GNN-based service-
+dependency representations change QoS relative to the DRL-PSO
+baseline in the tested regime.  This matches outcome (B) explicitly
+enumerated in the research plan: "GNN provides a small but
+statistically insignificant improvement." Note that p > 0.05 does NOT
+prove the methods are equivalent — the current experimental budget
+(5 seeds × 50 episodes) simply does not provide enough evidence
+either way. A larger budget and/or a joint GNN-DRL training regime
+(configurable via `gnn.training_mode: joint`) would be needed to
+tighten the confidence interval.
+
+Limitations
+-----------
+1. Service split, not workflow split.  Workflows are synthesized from
+   Service Classification tags.  Different workflow-generation seeds
+   separate train and test, so no test workflow was ever seen during
+   training, but the two partitions have no natural
+   task/query separation.
+2. GNN pretraining uses a graph autoencoder objective that is not
+   directly aligned with the QoS composition reward.  The joint
+   training mode (`gnn.training_mode: joint`) is implemented but not
+   used in the default report.
+3. Non-GNN configurations use a fixed random-orthogonal projection as
+   their service encoder.  A learned linear encoder might close some
+   of the gap; this is deliberately kept as a baseline extension.
+4. 50 episodes × 5 seeds is intentionally modest for a first
+   experiment.  Section "Reproducibility" in README.md documents how
+   to scale the budget without touching any code.
+
+How to reproduce
+----------------
+    python main.py --stage preprocess
+    python main.py --stage train_gnn
+    python main.py --stage ablation
+    python main.py --stage report
+
+All figures under `results/figures/` and all tables under
+`results/tables/` are byte-reproducible from the JSON logs in
+`results/logs/`.  Model checkpoints are under `checkpoints/`.

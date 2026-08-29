@@ -1,0 +1,36 @@
+{
+  "directions": {
+    "response_time": "min",
+    "availability": "max",
+    "throughput": "max",
+    "successability": "max",
+    "reliability": "max",
+    "compliance": "max",
+    "best_practices": "max",
+    "latency": "min",
+    "documentation": "max"
+  },
+  "q_min": {
+    "response_time": 37.0,
+    "availability": 7.0,
+    "throughput": 0.1,
+    "successability": 8.0,
+    "reliability": 33.0,
+    "compliance": 33.0,
+    "best_practices": 50.0,
+    "latency": 0.25,
+    "documentation": 1.0
+  },
+  "q_max": {
+    "response_time": 4989.67,
+    "availability": 100.0,
+    "throughput": 43.1,
+    "successability": 100.0,
+    "reliability": 89.0,
+    "compliance": 100.0,
+    "best_practices": 95.0,
+    "latency": 3881.25,
+    "documentation": 97.0
+  },
+  "fitted": true
+}
